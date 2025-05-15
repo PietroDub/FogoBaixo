@@ -5,21 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+    <style>
+        .Em_Alta {
+  font-family: 'Caveat Brush', cursive;
+             }
+    </style>
+
 </head>
-<body>
-  <header class="bg-red-500 flex p-2 flex-col items-center justify-center">
-    <div class="head w-full flex p-5 items-center justify-center space-x-6">
-        <img src="../imgs/home_img/7 1.svg" class=" w-2/12 sr-only md:not-sr-only" alt="logo_fogo_baixo">
-        <img src="../imgs/home_img/logo_mobile.svg" class="w-3/12 md:sr-only" alt="">
+
+<body class="h-screen w-full m-0 p-0">
+  <header class="flex flex-col items-center h-full bg-[url(../imgs/home_img/bg_header.svg)] bg-no-repeat text-green-600">
+    <div class="head w-full flex p-5 items-center justify-center space-x-6 ">
+        <img src="../imgs/home_img/7 1.svg" class=" w-2/12 sr-only md:not-sr-only md:mr-10" alt="logo_fogo_baixo">
+        <img src="../imgs/home_img/logo_mobile.svg" class="w-3/12 md:sr-only " alt="">
 <!--<input type="search" class="bg-white w-4/12 h-10 rounded-full sr-only md:not-sr-only" name="searchHome" id="searchHome"> <!-->
-        <input type="search" class="bg-white rounded-full md:w-3/12 sr-only md:sr-only" name="" id="">
+        <input type="search" class="bg-white rounded-full md:w-3/12 sr-only md:not-sr-only md:h-10" name="" id="">
         <nav class="space-x-6 pl-5 md:flex">
-            <a href="" class="border-l-5 pl-1">Log-in</a>
-            <a href="" class="border-l-5 pl-1">Sign-in</a>
+            <a href="" class="border-l-5 pl-1 text-2xl">Log-in</a>
+            <a href="" class="border-l-5 pl-1 text-2xl">Sign-in</a>
         </nav>
         <img src="../imgs/home_img/Perfil_Template.svg" alt="" class="w-20"> 
     </div>
-    <div class="h-2 bg-black w-8/12 flex"></div>
+    <div class="h-2 bg-black w-10/12 flex bg-green-600"></div>
 </header>
+  <section class="Em_Alta m-0 p-0">
+    <h1 class="text-green-600 text-7xl">
+      Em alta
+    </h1>
+  </section>
 </body>
+
 </html>
