@@ -16,7 +16,7 @@
 
 ## 🖼️ Telas do Sistema
 
-- Página inicial com **receitas em destaque**, sugestões do dia, header especial, footer e chefes mais bem avaliados. (Pietro
+- Página inicial com **receitas em destaque**, sugestões do dia, header especial, footer e chefes mais bem avaliados. (Pietro)
 - Tela de **Receitas em Destaque**;
 - Tela de **Sugestões**
 - Tela **Baseado em seus chefes favoritos**
