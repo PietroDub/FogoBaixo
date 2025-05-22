@@ -15,6 +15,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
         .Caveat {
   font-family: 'Caveat Brush', cursive;
@@ -22,7 +25,10 @@
         .IBM {
             font-family: "IBM Plex Sans Thai", sans-serif;;
         }
-                
+        .Gudea {
+            font-family: "Gudea", sans-serif;
+            font-style: normal;
+        }       
 
     </style>
 
@@ -46,12 +52,13 @@
     <h1 class="text-white text-8xl"><b>FOME</b></h1>
     <h2 class="text-white">Receitas das  mais simples ate as mais complexas!</h2>
 </header>
-  <section class="m-0 p-0 h-screen">
-    <div class="flex Caveat">
-        <h1 class="text-green-600 text-5xl w-3/12 border-l-10 ml-20 mt-10 pl-2">
+  <section class="m-0 p-0 h-screen ">
+   
+    <div class="flex flex-col md:flex flex-row Caveat">
+        <h1 class="text-green-600 text-5xl w-8/10 md:w-3/12 border-l-10 ml-20 mt-10 pl-2">
       RECEITAS EM ALTA!
         </h1>
-        <h1 class="brown text-3xl w-4/12 border-l-10 ml-20 mt-10 pl-2">
+        <h1 class="brown text-3xl w-8/10 md:w-4/12 border-l-10 ml-20 mt-10 pl-2">
       Pensamos o melhor para suas preferências e gostos.
         </h1>
     </div>
@@ -133,15 +140,67 @@
             </div>
     </div>
 
-     <div class=" flex flex-col md:flex-row Para_você Caveat mt-40">
-        <h1 class="text-green-600 text-5xl w-3/12 border-l-10 ml-20 mt-10 pl-2">
+     <div class=" flex flex-col md:flex-row Para_você Caveat mt-30 ">
+        <h1 class="text-green-600 text-5xl w-8/10  md:w-3/12 border-l-10 ml-20 mt-10 pl-2">
             O MELHOR PARA VOCÊ!
         </h1>
-        <h1 class="brown text-3xl w-4/12 border-l-10 ml-20 mt-10 pl-2">
+        <h1 class="brown text-3xl w-8/10  md:w-4/12 border-l-10 ml-20 mt-10 pl-2">
             Pensamos o melhor para suas preferências e gostos.
         </h1>
     </div>
+    <div class="Recomendações w-10/12   text-center Gudea  flex flex-col justify-self-center gap-10 md:grid md:grid-cols-3 md:grid-rows-2 md:gap-5 my-15">
+        <div class="text-white flex items-center justify-center bg-[url('/imgs/home_img/BreakFast.svg')] bg-no-repeat bg-cover bg-center flex relative">
+            <h1 class="text-4xl py-20"><b>BreakFast</b></h1>
+            <div class="bg-green-600 h-1/3 w-1/7 green-light right-4 bottom-4 absolute"></div>
+        </div>
+        <div class="text-white flex items-center justify-center bg-[url('/imgs/home_img/FastFood.svg')] bg-no-repeat bg-cover bg-center flex relative">
+            <h1 class="text-4xl py-20"><b>FastFood</b></h1>
+            <div class="bg-green-600 h-1/3 w-1/7 green-light right-4 bottom-4 absolute"></div>
+        </div>
+        <div class="text-white flex items-center justify-center bg-[url('/imgs/home_img/Churras.svg')] bg-no-repeat bg-cover bg-center flex relative">
+            <h1 class="text-4xl py-20"><b>Churrasco</b></h1>
+            <div class="bg-green-600 h-1/3 w-1/7 green-light right-4 bottom-4 absolute"></div>
+        </div>
+        <div class="text-white flex items-center justify-center bg-[url('/imgs/home_img/Vegan.svg')] bg-no-repeat bg-cover bg-center flex relative">
+            <h1 class="text-4xl py-20"><b>Veganas</b></h1>
+            <div class="bg-green-600 h-1/3 w-1/7 green-light right-4 bottom-4 absolute"></div>
+        </div>
+        <div class="text-white flex items-center justify-center bg-[url('/imgs/home_img/Massas.svg')] bg-no-repeat bg-cover bg-center flex relative">
+            <h1 class="text-4xl py-20"><b>Massas</b></h1>
+            <div class="bg-green-600 h-1/3 w-1/7 green-light right-4 bottom-4 absolute"></div>
+        </div>
+        <div class="text-white flex items-center justify-center bg-[url('/imgs/home_img/Asian.svg')] bg-no-repeat bg-cover bg-center flex relative">
+            <h1 class="text-4xl py-20"><b>Asiáticas</b></h1>
+            <div class="bg-green-600 h-1/3 w-1/7 green-light right-4 bottom-4 absolute"></div>
+        </div>
+    </div>
+
+    <div class="osChefes w-full h-full">
+        <div class=" border-l-10 sm:flex w-9/10 justify-self-center md:flex-none md:ml-20 pl-5 text-green-600 my-5 md:my-10">
+            <h1 class="text-5xl Caveat ">
+                CHEFES MAIS BEM AVALIADOS!
+            </h1>
+        </div>
+        <div class="background h-full flex justify-center">
+            <div class="back-2 background border-white border-4 h-full w-11/12 flex justify-center">
+                <div class="back-2 background border-white border-4 h-full w-11/12 flex">
+                     <div class="p-10 w-7/12 ">
+                        <h1 class="text-3xl Caveat">Os chefes mais renomados do fogobaixo! Com avaliações feitas por pessoas com gostos bons, como o seus!</h1>
+                        
+                    </div>
+                    <img src="/imgs/home_img/Lontra.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
   </section>
+  <footer>
+
+  </footer>
+  <!--Modais-->
+
 </body>
 
 </html>
