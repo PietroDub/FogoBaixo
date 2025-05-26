@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Em alta</title>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!--Fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+        .Caveat {
+  font-family: 'Caveat Brush', cursive;
+             }
+        .IBM {
+            font-family: "IBM Plex Sans Thai", sans-serif;;
+        }
+        .Gudea {
+            font-family: "Gudea", sans-serif;
+            font-style: normal;
+        }       
+
+    </style>
+
 </head>
-<body>
-    em alta
+
+<body class="w-screen h-screen">
+    <header>
+
+    </header>
+    <main class="m-0 p-0 flex-grow">
+        <div class="flex flex-col md:flex flex-row Caveat w-8/10 md:w-4/12 ">
+        <h1 class="brown text-5xl border-l-10 ml-20 mt-10 pl-2">
+            RECEITAS
+        </h1>
+        <h1 class="text-green-600 text-5xl mt-10 pl-2">
+            EM ALTA!
+        </h1>
+        <img src="../imgs/Em_Alta/fire.svg" class="mt-10 pl-2 w-10" alt="">
+        </div>
+
+        <p class="text-2xl w-5/12 ml-20 mt-10 Gudea brown">
+        As receitas do momento, mais procuradas, mais testadas, aprovadas e deliciosas, da última semana. Aproveite e teste como ficou sua versão da comida mais popular do momento!
+        </p>
+
+        <section class="flex w-8/10 md:w-7/12 gap-x-20">
+            <div class="flex flex-col md:flex flex-row Caveat  ">
+            <a class="brown text-5xl border-l-10 ml-20 mt-10 pl-2">
+                RECEITAS
+            </a>
+            <a class="text-green-600 text-5xl mt-10 pl-2">
+                EM ALTA!
+            </a>
+            <img src="../imgs/Em_Alta/fire.svg" class="mt-10 pl-2 w-10" alt="">
+            </div>
+            <div class="flex flex-col md:flex flex-row Caveat ">
+            <a class="brown text-5xl border-l-10 mt-10 pl-2">
+                TUTORIAIS
+            </a>
+            <a class="text-green-600 text-5xl mt-10 pl-2">
+                EM ALTA!
+            </a>
+            <img src="../imgs/Em_Alta/fire.svg" class="mt-10 pl-2 w-10" alt="">
+            </div>
+         </section>
+
+         <section class="bg-[url('../imgs/home_img/bg_card_home.png')] bg-no-repeat bg-cover bg-center md:h-100 my-10 flex justify-center items-center">
+            <div class="h-full w-10/12 gap-x-5 flex justify-center items-center">
+                <div class="card1 h-9/10 bg-white w-3/12">
+                    <img src="" alt="">
+                    <p>receita doida</p>
+                </div>
+                <div class="card2 h-9/10 bg-white w-3/12">
+                    <img src="" alt="">
+                    <p>receita doida</p>
+                </div>
+                <div class="card3 h-9/10 bg-white w-3/12">
+                    <img src="" alt="">
+                    <p>receita doida</p>
+                </div>
+            </div>
+         </section>
+    </main>
 </body>
 </html>
