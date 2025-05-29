@@ -4,34 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Faça Log-in</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="background">
-    <div class="div w-1/2 h-screen flex items-center justify-center">
-        <div class="container p6 rounded-xl shadow-lg h-3/4 w-2/4 flex-col justify-center items-center">
-            <h1 class="titulo text-center"><span class="inline-flex items-baseline">    <span class="mx-1 size-5 self-center rounded-full" style="color: 66BB6A; background-color: 66BB6A;"></span></span>LOGIN</h1>
-            <h2 class="textologin text-center"> Entre no site, e explore as mais diversas e personalizadas experiencias culinárias.</h2>
-            <div class="input h-4 w-32 object-contain max-w-xxl">
-                <input 
-              type="email" 
-              placeholder="E-mail"
-              class="input flex flex-col p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-zinc-400"
-              style="margin: 4em;"
-              />
-        </div>
-                <div class="input h-4 w-32 object-contain max-w-xxl">
-                <input 
-              type="password" 
-              placeholder="Senha"
-              class="input flex flex-col p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-zinc-400"
-              style="margin: 4em;"
+<body class="background flex">
+    <div class="div w-1/2 h-screen flex items-center justify-center div">
+        <div class="container p6 rounded-xl shadow-lg h-4/6 w-2/4 flex flex-col p-5">
+            <h1 class="titulo text-center text-3xl">Login</h1>
+            <h2 class="textologin text-center mt-5"> Entre no site, e explore as mais diversas e personalizadas experiencias culinárias.</h2>
+       
+          <div class="flex flex-col gap-4 mt-10 px-8">
+            <input
+                type="email"
+                placeholder="Digite seu e-mail"
+                class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brown-500"
+            />
+            <input
+                type="password"
+                placeholder="Digite sua senha"
+                class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brown-500"
             />
         </div>
+        
+        
+        <div class="flex flex-col justify-center items-center mt-10 ">
+            <button type="button" class="border p-3 w-2/4 green-light text-white font-semibold">
+                ENTRAR
+            </button>   
+            <a href="" class="mb-5 font-semibold green-color">esqueceu a senha?</a>
+            <a href="" class="brown font-semibold text-xl">Não tem conta? Cadastre-se</a>
         </div>
+        
+        </div>
+        
+    </div>
+
+    <div class="w-1/2 h-screen">     
+    <div class="flex flex-col h-2/3 justify-center items-center gap-y-5">
+        <img src="../imgs/home_img/7 1.svg" class="w-2/4" alt="">
+        <p class="text-2xl font-semibold Gudea text-white w-2/4">Deu Branco? Pode logar no site com contas de outras redes.</p>
+        <div class="array-redes flex items-center justify-center gap-x-5 green-light p-5 rounded-full">
+            <i class="fa-brands fa-google bg-white p-3 rounded-full text-3xl" style="color: #4CAF50;"></i>
+            <i class="fa-brands fa-x-twitter bg-white p-3 rounded-full text-3xl" style="color: #4CAF50;"></i>
+            <i class="fa-brands fa-facebook green-light rounded-full text-5xl" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    <img src="../imgs/triangulo.png" class="absolute bottom-0 right-0" alt="">
     </div>
 
 </body>
