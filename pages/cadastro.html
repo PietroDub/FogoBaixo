@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro - FogoBaixo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="min-h-screen flex items-center justify-center m-0 p-0 relative overflow-hidden">
+
+  <!-- Imagem de fundo (acima do body, abaixo do conteúdo) -->
+  <div class="absolute inset-0 z-0 pointer-events-none">
+    <img src="../imgs/triangulo.png" class="absolute bottom-0 right-0 w-1/2" alt="">
+  </div>
+
+  <!-- Conteúdo principal -->
+  <main class="w-full max-w-4xl flex shadow-md relative flex-col md:flex md:flex-row ">
+
+    <!-- Lado Esquerdo -->
+    <div class="w-1/2 p-8 flex flex-col justify-center gap-y-5 background items-center">
+      <div class="flex items-center flex-col">
+        <img src="../imgs/home_img/7 1.svg" class="w-3/4" alt="">
+        <p class="text-xl text-white font-semibold text-center">
+          Entre no site, e explore as mais diversas e personalizadas experiências culinárias.
+        </p>
+      </div>
+      <div class="flex mt-6 w-full items-center justify-center">
+        <div class="array-redes flex items-center justify-center gap-x-5 p-5 rounded-full">
+          <i class="fa-brands fa-google bg-white px-3 py-2 rounded-full text-3xl" style="color: #4CAF50;"></i>
+          <i class="fa-brands fa-x-twitter bg-white px-3 py-2 rounded-full text-3xl" style="color: #4CAF50;"></i>
+          <i class="fa-brands fa-facebook green-light rounded-full text-5xl" style="color: #ffffff;"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lado Direito (Formulário) -->
+    <div class="w-1/2 p-8 bg-white">
+      <h2 class="green-dark font-bold mb-6 text-center text-3xl">Cadastro</h2>
+
+      <form class="space-y-4 flex flex-col">
+        <input type="text" placeholder="Nome" class="w-full p-2 border border-gray-300 rounded" />
+        <input type="email" placeholder="Email" class="w-full p-2 border border-gray-300 rounded" />
+        <input type="password" placeholder="Senha" class="w-full p-2 border border-gray-300 rounded" />
+
+        <label class="flex items-center space-x-2 text-sm">
+          <input type="checkbox" />
+          <span class="green-dark font-bold">Aceite os termos aqui</span>
+        </label>
+      </form>
+
+      <div class="mt-4 text-sm flex flex-col justify-center items-center">
+        <button type="submit" class="w-1/2 p-2 border border-gray-300 rounded">Cadastrar</button>
+        <p class="text-green-600 font-semibold" href="perca_1.html" >Esqueceu a senha?</p>
+        <p class="brown font-bold" href="login.html" >Já possui uma conta, faça login</p>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>

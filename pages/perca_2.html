@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perca de senha - FogoBaixo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="min-h-screen flex items-center justify-center m-0 p-0 relative overflow-hidden">
+
+  <!-- Imagem de fundo (acima do body, abaixo do conteúdo) -->
+  <div class="absolute inset-0 z-0 pointer-events-none">
+    <img src="../imgs/triangulo.png" class="absolute bottom-0 right-0 w-1/2" alt="">
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="w-full max-w-4xl flex shadow-md relative z-10 flex-col md:flex md:flex-row items-center">
+
+    <!-- Lado Esquerdo -->
+    <div class="w-1/2 p-8 flex flex-col justify-center gap-y-5 background items-center">
+      <div class="flex items-center flex-col">
+        <img src="../imgs/home_img/7 1.svg" class="w-3/4" alt="">
+        <p class="text-xl text-white font-semibold text-center">
+          Entre no site, e explore as mais diversas e personalizadas experiências culinárias.
+        </p>
+      </div>
+      <div class="flex mt-6 w-full items-center justify-center">
+        <div class="array-redes flex items-center justify-center gap-x-5 p-5 rounded-full">
+          <i class="fa-brands fa-google bg-white px-3 py-2 rounded-full text-3xl" style="color: #4CAF50;"></i>
+          <i class="fa-brands fa-x-twitter bg-white px-3 py-2 rounded-full text-3xl" style="color: #4CAF50;"></i>
+          <i class="fa-brands fa-facebook green-light rounded-full text-5xl" style="color: #ffffff;"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lado Direito (Formulário) -->
+    <div class="w-1/2 p-8 bg-white">
+      <h2 class="green-dark font-bold mb-6 text-center text-3xl">Cadastro</h2>
+
+      <p class="font-semibold brown text-center">Um email, foi enviado para o endereço@user.email@gmail.com ,  recupere sua senha e volte ao site para logar.</p>
+
+      <div class="mt-4 text-sm flex justify-center items-center gap-x-10 mt-5">
+
+       <div class="flex flex-col items-center justify-center gap-y-3">
+         <p class="font-semibold green-dark">Recuperou a senha</p>
+         <button class="background py-3 px-7 font-semibold text-white" href="login.html">Faça Login</button>
+       </div>
+
+       <div class="flex flex-col items-center justify-center gap-y-3">
+         <p class="font-semibold green-dark">Não tem uma conta?</p>
+         <button class="background py-3 px-7 font-semibold text-white" href="cadastro.html">Cadastro</button>
+       </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
