@@ -17,7 +17,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <style>
         .Caveat {
   font-family: 'Caveat Brush', cursive;
@@ -32,8 +35,12 @@
 
     </style>
 </head>
-<body class="w-screen h-screen flex items-center justify-center div">
-    <main class="w-3/6 bg-[url('../imgs/perfil/fundo_p.svg')] h-full bg-no-repeat bg-cover bg-center">
+<body class="w-screen h-screen flex items-center justify-center div relative">
+
+    <img src="../imgs/fundo_marrom.svg" class="w-2/6 absolute top-0 left-0" alt=""> <!--Imagem marrom de fundo-->
+
+    
+    <main class="z-10 w-3/6 bg-[url('../imgs/perfil/fundo_p.svg')] h-full bg-no-repeat bg-cover bg-center relative">
         <div class="flex items-center justify-center mt-10 gap-x-10">
         <img src="../imgs/perfil/Perfil.svg" class="" alt="">
             <div class="background flex p-5 text-white gap-x-10 text-xl">
@@ -41,12 +48,32 @@
                 <p>emaildousuario@gmail.com</p>
             </div>
         </div>
-        <section class="ml-20 mt-10 h-1/2">
+        <div class="ml-20 ">
             <h1 class="Caveat border-l-8 border-green-500 green-dark text-5xl pl-4">Receitas Postadas</h1>
-            <div class="bg-[url('../imgs/perfil/bolo.svg')] bg-no-repeat bg-cover bg-center w-5/6 h-3/5 mt-10 relative">
-
+        </div>
+        <section class="h-2/6 flex items-center justify-center relative">
+            <div class="bg-[url('../imgs/perfil/bolo.svg')] bg-no-repeat bg-cover bg-center w-5/6 h-4/5 mt-5 absolute top-0 ">
+                <div class="absolute green-light w-1/4 right-4 top-4 flex items-center justify-center">
+                    <p class="text-center p-3 font-semibold">Bolo de cenoura com cobertura de chocolate</p>
+                </div>
+                <div class="absolute green-light w-1/4 right-4 top-20 mt-10 flex justify-center items-center gap-x-5 p-2">
+                    <p class="text-center font-semibold">Postado a 1h</p>
+                    <i class="fa-regular fa-clock text-xl"></i>
+                </div>
             </div>
         </section>
-    </main>   
+        <div class="ml-20 ">
+            <h1 class="Caveat border-l-8 border-green-500 green-dark text-5xl pl-4">Receitas Salvas</h1>
+        </div>
+        <section class="h-1/5">
+            <div class="h-full flex items-center justify-center p-5 gap-x-5 mt-5">
+                <img src="../imgs/perfil/Group 31.png" class="w-1/5" alt="">
+                <img src="../imgs/perfil/Group 32.png" class="w-1/5" alt="">
+                <img src="../imgs/perfil/Group 33.png" class="w-1/5" alt="">
+            </div>
+        </section>
+    </main>  
+
+    <img src="../imgs/triangulo.png" class="w-2/6 absolute bottom-0 right-0" alt=""> 
 </body>
 </html>
