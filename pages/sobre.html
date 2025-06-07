@@ -53,13 +53,14 @@
       
 
     </style>
-
 </head>
-<body>
-    <header class="w-full bg-[url('../imgs/header_background.svg')] bg-no-repeat bg-cover bg-center text-green-600">
+<body class="w-full flex flex-col">
+    <header class="w-full bg-[url('../imgs/header_background.svg')] bg-no-repeat bg-cover bg-center text-green-600 flex flex-col items-center">
         <div class="head w-full flex p-5 items-center justify-center space-x-6 ">
-        <img src="../imgs/home_img/7 1.svg" class=" w-2/12  md:mr-10" alt="logo_fogo_baixo">
-        <img src="../imgs/home_img/logo_mobile.svg" class="w-3/12 md:sr-only " alt="">
+        <a href="home.html" class="hidden md:block w-2/12 md:mr-10">
+            <img src="../imgs/home_img/7 1.svg" alt="logo_fogo_baixo" class="w-full">
+        </a>
+        <a href="home.html" class="w-3/12  md:sr-only "><img src="../imgs/home_img/logo_mobile.svg" class="" alt=""></a>
 <!--<input type="search" class="bg-white w-4/12 h-10 rounded-full sr-only md:not-sr-only" name="searchHome" id="searchHome"> <!-->
         <input type="search" class="bg-white rounded-full md:w-3/12 md:h-10" name="" id="">
         <nav class="space-x-6 pl-5 md:flex">
@@ -68,7 +69,7 @@
         </nav>
         <img src="../imgs/home_img/Perfil_Template.svg" alt="" class="w-20"> 
     </div>
-    <div class="h-2 bg-black w-10/12 flex bg-green-600"></div>
+    <div class="h-2 w-10/12 flex bg-green-600"></div>
         <nav class="text-white flex gap-x-10 my-5 IBM item justify-center p-5">
             <a href="" class="border-l-5 border-green-600 pl-2 text-2xl sr-only md:not-sr-only">Veganas</a>
             <a href="" class="border-l-5 border-green-600 pl-2 text-2xl">Massas</a>
@@ -84,20 +85,55 @@
     CRIADORES DO SITE!
    </h1>
 
-   <div class="w-full card-criador border-6">
-      <div></div>
-      <div class="w-7/12">
-        <h1 class="Caveat text-3xl green-dark">Pietro Vito</h1>
-        <p class="text-2xl font-semibold Caveat">Desenvolvedor master, designer, área de marketing e UX-/UI Design.</p>
+   <div class="w-full flex flex-col justify-center items-center gap-y-5">
+    <div class="w-8/12 card-criador border-6 flex">
+      <div class="h-full w-4/12 p-5">
+        <img class="rounded-full" src="../imgs/sim.jpg" alt="">
+      </div>
+      <div class="w-7/12 p-5 flex flex-col justify-center">
+        <h1 class="Caveat text-5xl green-dark">Pietro Vito</h1>
+        <p class="text-3xl font-semibold Caveat">Desenvolvedor master, designer, área de marketing e UX-/UI Design.</p>
         <div>
             <div class=" flex gap-x-3 w-4/12 text-4xl text-green-600">
                 <i class="fa-brands fa-github"></i>
                 <i class="fa-brands fa-youtube"></i>
                 <i class="fa-brands fa-linkedin"></i>
             </div>
-            <p></p>
+            <div class="flex items-center gap-x-3">
+                <p class="Caveat text-2xl green-dark">Email de contato:</p>
+                <p>pietro.vito@gmail.com</p>
+            </div>
         </div>
-    </div>
-   </div>
+      </div>
+     </div>
+
+     <div class="w-8/12 card-criador border-6 flex">
+      <div class="h-full w-4/12 p-5">
+        <img class="rounded-full" src="../imgs/sim.jpg" alt="">
+      </div>
+       <div class="w-7/12 p-5 flex flex-col justify-center">
+         <h1 class="Caveat text-5xl green-dark">Pietro Vito</h1>
+         <p class="text-3xl font-semibold Caveat">Desenvolvedor master, designer, área de marketing e UX-/UI Design.</p>
+        <div>
+            <div class=" flex gap-x-3 w-4/12 text-4xl text-green-600">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="flex items-center gap-x-3">
+                <p class="Caveat text-2xl green-dark">Email de contato:</p>
+                <p>pietro.vito@gmail.com</p>
+            </div>
+        </div>
+      </div>
+     </div>
+
+     <footer class="bottom-0 left-0 w-full text-white p-4 text-center green-light flex items-center justify-center">
+    <img src="../imgs/home_img/7 1.svg" class="w-4/12 md:w-2/12">
+    <p class=" text-xl mt-5">© 2025 Fogo-Baixo. Todos os direitos reservados.</p>
+    <p class="not-sr-only md:sr-only">todos os direitos reservados</p>
+    <img src="../imgs/github_white.svg" class="md:w-1/12 h-7 mt-5 ml-5" alt="">
+  </footer>
+
 </body>
 </html>
