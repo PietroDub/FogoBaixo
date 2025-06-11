@@ -20,7 +20,7 @@
 - Tela de **Receitas em Destaque**;
 - Tela de **Sugestões**
 - Tela **Baseado em seus chefes favoritos**
-- Tela de **login/cadastro** com validação. (Pedro e Miguel)
+- Tela de **login/cadastro** com validação. 
 - Página de **detalhes da receita**, incluindo avaliações e comentários.
 - Interface para **envio de novas receitas**.
 - Tela de **perfil do usuário**, com histórico de avaliações e receitas salvas.
