@@ -35,9 +35,32 @@
 </head>
 
 <body class="w-screen h-screen">
-    <header>
-
+    <header class="w-full bg-[url('../imgs/header_background.svg')] bg-no-repeat bg-cover bg-center text-green-600 flex flex-col items-center">
+        <div class="head w-full flex p-5 items-center justify-center space-x-6 ">
+        <a href="home.html" class="hidden md:block w-2/12 md:mr-10">
+            <img src="../imgs/home_img/7 1.svg" alt="logo_fogo_baixo" class="w-full">
+        </a>
+        <a href="home.html" class="w-3/12  md:sr-only "><img src="../imgs/home_img/logo_mobile.svg" class="" alt=""></a>
+<!--<input type="search" class="bg-white w-4/12 h-10 rounded-full sr-only md:not-sr-only" name="searchHome" id="searchHome"> <!-->
+        <input type="search" class="bg-white rounded-full md:w-3/12 md:h-10" name="" id="">
+        <nav class="space-x-6 pl-5 md:flex">
+            <a href="login.html" class="border-l-5 pl-1 text-2xl">Log-in</a>
+            <a href="" class="border-l-5 pl-1 text-2xl">Sign-in</a>
+        </nav>
+        <img src="../imgs/home_img/Perfil_Template.svg" alt="" class="w-20"> 
+    </div>
+    <div class="h-2 w-10/12 flex bg-green-600"></div>
+        <nav class="text-white flex gap-x-10 my-5 IBM item justify-center p-5">
+            <a href="" class="border-l-5 border-green-600 pl-2 text-2xl sr-only md:not-sr-only">Veganas</a>
+            <a href="" class="border-l-5 border-green-600 pl-2 text-2xl">Massas</a>
+            <a href="" class="border-l-5 border-green-600 pl-2 text-2xl">Doces</a>
+            <a href="" class="border-l-5 border-green-600 pl-2 text-2xl">Fitness</a>
+            <a href="" class="border-l-5 border-green-600 pl-2 text-2xl">Regionais</a>
+            <a href="" class="border-l-5 border-green-600 pl-2 text-2xl sr-only md:not-sr-only">Outros..</a>
+        </nav>
+    </div>
     </header>
+
     <main class="m-0 p-0 flex-grow">
         <div class="flex flex-col md:flex flex-row Caveat w-8/10 md:w-4/12 ">
         <h1 class="brown text-5xl border-l-10 ml-20 mt-10 pl-2">
@@ -53,6 +76,17 @@
         As receitas do momento, mais procuradas, mais testadas, aprovadas e deliciosas, da última semana. Aproveite e teste como ficou sua versão da comida mais popular do momento!
         </p>
 
+        <section class="md:hidden bg-[url('../imgs/home_img/bg_card_home.png')] bg-no-repeat bg-cover bg-center flex flex-col w-full">
+      <!-- Mobile cards -->
+      <div class="relative items-center justify-center flex">
+        <img src="../imgs/Em_Alta/parmegiana.png" class="w-10/12 p-10" alt="">
+        <div class="absolute bg-white flex Gudea text-xl gap-x-4 p-4 font-semibold bottom-4">
+          <img src="../imgs/Em_Alta/Favorito.svg" alt="">
+          <p>Mais Acessada!</p>
+        </div>
+      </div>
+    </section>
+
         <section class="flex flex-col w-7/10 md:w-7/12 md:flex-row gap-x-20 mb-20">
             <div class="flex md:flex flex-row Caveat  ">
             <a class="brown text-5xl border-l-10 ml-20 mt-10 pl-2">
@@ -61,7 +95,6 @@
             <a class="text-green-600 text-5xl mt-10 pl-2">
                 EM ALTA!
             </a>
-            <img src="../imgs/Em_Alta/fire.svg" class="mt-10 pl-2 w-10" alt="">
             </div>
             <div class="flex flex-col  ml-20 md:flex flex-row Caveat ">
             <a class="brown text-5xl border-l-10 mt-10 pl-2">
@@ -85,14 +118,14 @@
                     </div>
                 </div>
                  <div class="card2 h-9/10 bg-white w-3/12 flex justify-center items-center relative">
-                    <img src="../imgs/Em_Alta/parmegiana.png" class="h-9/10 w-11/12" alt="">
-                    <div class="absolute top-6 left-6 bg-white flex Gudea text-2xl gap-x-5 p-4 font-semibold">
+                    <img src="../imgs/comida/strogonoff.png" class="h-9/10 w-11/12" alt="">
+                    <div class="absolute top-6 left-6 bg-white flex Gudea text-2xl gap-x-5 p-3 font-semibold">
                         <img src="../imgs/Em_Alta/Favorito.svg" alt="">
                         <p>Mais Acessada!</p>
                     </div>
                 </div>
                   <div class="card3 h-9/10 bg-white w-3/12 flex justify-center items-center relative">
-                    <img src="../imgs/Em_Alta/parmegiana.png" class="h-9/10 w-11/12" alt="">
+                    <img src="../imgs/comida/musse_maracuja.png" class="h-9/10 w-11/12" alt="">
                     <div class="absolute top-6 left-6 bg-white flex Gudea text-2xl gap-x-5 p-4 font-semibold">
                         <img src="../imgs/Em_Alta/Favorito.svg" alt="">
                         <p>Mais Acessada!</p>

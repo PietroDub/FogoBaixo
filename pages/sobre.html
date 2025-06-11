@@ -56,26 +56,29 @@
 
 </head>
 <body>
-    <header class="w-full bg-[url('../imgs/header_background.svg')] bg-no-repeat bg-cover bg-center text-green-600">
+    <header class="w-full bg-[url('../imgs/header_background.svg')] bg-no-repeat bg-cover bg-center text-green-600 flex flex-col items-center">
         <div class="head w-full flex p-5 items-center justify-center space-x-6 ">
-        <img src="../imgs/home_img/7 1.svg" class=" w-2/12  md:mr-10" alt="logo_fogo_baixo">
-        <img src="../imgs/home_img/logo_mobile.svg" class="w-3/12 md:sr-only " alt="">
+        <a href="home.html" class="hidden md:block w-2/12 md:mr-10">
+            <img src="../imgs/home_img/7 1.svg" alt="logo_fogo_baixo" class="w-full">
+        </a>
+        <a href="home.html" class="w-3/12  md:sr-only "><img src="../imgs/home_img/logo_mobile.svg" class="" alt=""></a>
 <!--<input type="search" class="bg-white w-4/12 h-10 rounded-full sr-only md:not-sr-only" name="searchHome" id="searchHome"> <!-->
-        <input type="search" class="bg-white rounded-full md:w-3/12 md:h-10" name="" id="">
+        <input type="search" class="bg-white rounded-full md:w-3/12 md:h-10 hidden md:block" name="" id="">
         <nav class="space-x-6 pl-5 md:flex">
             <a href="login.html" class="border-l-5 pl-1 text-2xl">Log-in</a>
             <a href="" class="border-l-5 pl-1 text-2xl">Sign-in</a>
         </nav>
-        <img src="../imgs/home_img/Perfil_Template.svg" alt="" class="w-20"> 
+        <a href="Perfil.html"><img src="../imgs/home_img/Perfil_Template.svg" alt="" class="w-20"></a>
+
     </div>
-    <div class="h-2 bg-black w-10/12 flex bg-green-600"></div>
+    <div class="h-2 w-10/12 flex bg-green-600"></div>
         <nav class="text-white flex gap-x-10 my-5 IBM item justify-center p-5">
-            <a href="" class="border-l-5 border-green-600 pl-2 text-2xl sr-only md:not-sr-only">Veganas</a>
-            <a href="" class="border-l-5 border-green-600 pl-2 text-2xl">Massas</a>
-            <a href="" class="border-l-5 border-green-600 pl-2 text-2xl">Doces</a>
-            <a href="" class="border-l-5 border-green-600 pl-2 text-2xl">Fitness</a>
-            <a href="" class="border-l-5 border-green-600 pl-2 text-2xl">Regionais</a>
-            <a href="" class="border-l-5 border-green-600 pl-2 text-2xl sr-only md:not-sr-only">Outros..</a>
+            <a href="vegans.html" class="border-l-5 border-green-600 pl-2 text-2xl sr-only md:not-sr-only">Veganas</a>
+            <a href="Massas.html" class="border-l-5 border-green-600 pl-2 text-2xl">Massas</a>
+            <a href="Doces.html" class="border-l-5 border-green-600 pl-2 text-2xl">Doces</a>
+            <a href="Fitness.html" class="border-l-5 border-green-600 pl-2 text-2xl">Fitness</a>
+            <a href="região.html" class="border-l-5 border-green-600 pl-2 text-2xl">Regionais</a>
+            <a href="Recomendados.html" class="border-l-5 border-green-600 pl-2 text-2xl sr-only md:not-sr-only">Outros..</a>
         </nav>
     </div>
 </header>
