@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguer</title>
+ <link rel="stylesheet" href="../../CSS/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--Fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+<style>
+        .Caveat {
+  font-family: 'Caveat Brush', cursive;
+             }
+        .IBM {
+            font-family: "IBM Plex Sans Thai", sans-serif;;
+        }
+        .Gudea {
+            font-family: "Gudea", sans-serif;
+            font-style: normal;
+        } 
+        .just-me {
+            font-family: "Just Me Again Down Here", cursive;;
+            font-style: normal;
+        }
+        .piedra {
+             font-family: "Piedra", serif;
+             font-style: normal;
+        }
+
+    </style>
+
+</head>
+<body class="w-full flex flex-col items-center justify-center">
+       <header class="w-full bg-[url('../../imgs/header_background.svg')] bg-no-repeat bg-cover bg-center text-green-600 flex flex-col items-center">
+        <div class="head w-full flex p-5 items-center justify-center space-x-6 ">
+        <a href="home.html" class="hidden md:block w-2/12 md:mr-10">
+            <img src="../../imgs/home_img/7 1.svg" alt="logo_fogo_baixo" class="w-full">
+        </a>
+        <a href="home.html" class="w-3/12  md:sr-only "><img src="../../imgs/home_img/logo_mobile.svg" class="" alt=""></a>
+<!--<input type="search" class="bg-white w-4/12 h-10 rounded-full sr-only md:not-sr-only" name="searchHome" id="searchHome"> <!-->
+        <input type="search" class="bg-white rounded-full md:w-3/12 md:h-10 hidden md:block" name="" id="">
+        <nav class="space-x-6 pl-5 md:flex">
+            <a href="login.html" class="border-l-5 pl-1 text-2xl">Log-in</a>
+            <a href="" class="border-l-5 pl-1 text-2xl">Sign-in</a>
+        </nav>
+        <a href="Perfil.html"><img src="../../imgs/home_img/Perfil_Template.svg" alt="" class="w-20"></a>
+
+    </div>
+    <div class="h-2 w-10/12 flex bg-green-600"></div>
+        <nav class="text-white flex gap-x-10 my-5 IBM item justify-center p-5">
+            <a href="vegans.html" class="border-l-5 border-green-600 pl-2 text-2xl hidden md:block">Veganas</a>
+            <a href="Massas.html" class="border-l-5 border-green-600 pl-2 text-2xl">Massas</a>
+            <a href="Doces.html" class="border-l-5 border-green-600 pl-2 text-2xl">Doces</a>
+            <a href="Fitness.html" class="border-l-5 border-green-600 pl-2 text-2xl">Fitness</a>
+            <a href="região.html" class="border-l-5 border-green-600 pl-2 text-2xl">Regionais</a>
+            <a href="Recomendados.html" class="border-l-5 border-green-600 pl-2 text-2xl hidden md:block">Outros..</a>
+        </nav>
+    </div>
+</header>
+
+    <main class="w-10/12 flex flex-col justify-center items-center">
+        <section class="flex h-150 p-5 items-start justify-center">
+           <img src="../../imgs/comida/hamb2.png" alt="">
+           <div class="w-2/4 lg:w-1/4 flex flex-col gap-y-5 justify-left pl-5">
+            <h1 class="text-5xl border-l-15 pl-2 Caveat w-full green-dark">
+            Hamburguer Caseiro
+            </h1>
+            <div class="font-semibold text-white background w-full lg:w-2/3 text-center py-3 ">
+                compartilhe sua receita!
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+            <div class="flex items-center justify-left ">
+                <img src="../../imgs/profile.png" class="w-1/4" alt="">
+                <div class="flex flex-col pl-5">
+                    <p class="text-3xl font-semibold">Jane Doe</p>
+                    <p>jane.Doe@gmail.com</p>
+                </div>
+            </div>
+            <h1 class="text-5xl border-l-15 pl-2 Caveat green-dark">
+            Sobre o chef: 
+            </h1>
+            <p class="font-semibold w-full">Sou uma chef que cozinha por diversão, moro nos estados unidos e sou apaixonada pela culinária local, principalmente fastfood caseiro.</p>  
+           </div>
+           <div>
+             <div class="hidden gap-y-5 m-10 lg:flex lg:flex-col">
+                <div class="font-semibold text-white background p-5 text-2xl">
+                salvar receita!
+                <i class="fa-solid fa-bookmark"></i>
+            </div>
+            <div class="font-semibold text-white background p-5 text-2xl">
+                Compartilhar!
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+             </div>
+           </div>
+        </section>
+        <section class="w-8/10 flex gap-x-5 justify-center">
+           <div class="w-1/2">
+            <h1 class="text-5xl border-l-15 pl-2 Caveat w-full green-dark">
+                SOBRE A RECEITA
+            </h1> 
+            <p class="hidden md:flex">Um hambúrguer artesanal simples e delicioso, perfeito para aquele almoço rápido ou um jantar especial com amigos. Com poucos ingredientes e um modo de preparo fácil, você vai se surpreender com o sabor!</p>
+            <p class="flex md:hidden">Um hambúrguer artesanal simples e delicioso, perfeito para aquele almoço rápido ou um jantar especial com amigos.</p>
+           </div>
+           <div class="w-1/2">
+            <h1 class="text-5xl border-l-15 pl-2 Caveat w-full brown">
+                INGREDIENTES
+            </h1> 
+            <ul>
+                <li><b>1L</b>Leite Integral</li>
+                <li><b>50ml </b>vinagre de álcool</li>
+                <li><b>1 colher de chá</b> de manteiga</li>
+                <li><b>1/2 colhe</b>r de café</li>
+                <li><b>1/2 colher</b> de sal</li>
+            </ul>
+           </div>
+        </section>
+
+        <section class="w-8/10 flex gap-x-5 mt-10 justify-center">
+            <div>
+                <h1 class="text-5xl border-l-15 pl-2 Caveat w-full green-dark">
+                    Passo a Passo:
+                </h1> 
+               <div class="flex p-5 items-center justify-center gap-x-3 text-2xl background text-white mt-10">
+                   <p class="font-semibold">30 MIN</p>
+                   <i class="fa-solid fa-clock"></i>
+               </div>
+            </div>
+
+            <div class="flex flex-col items-start">
+                <h1 class="text-5xl  pl-5 Caveat brown">Mantenha o Fogo Baixo!</h1>
+            <div class="flex items-center justify-center mt-10">
+              <h2 class="Caveat p-5 green-light text-5xl text-white w-1/6 text-center mt-10">1</h2>  
+              <h1 class="text-5xl  pl-5 Caveat green-dark mt-10">PASSO 1: Colocar na panela!</h1>
+            </div>
+            <p class="flex items-center justify-center w-2/3">Derreta a manteiga em uma frigideira em fogo médio. Adicione a cebola picada e refogue até que fique transparente, mexendo sempre para não queimar.</p>
+            </div>
+        </section>
+
+        <section class="w-8/10 flex gap-x-5 justify-center">
+             <div class="flex flex-col items-start w-2/3">   
+            <div class="flex items-center justify-center mt-10">
+              <h2 class="Caveat p-5 green-light text-5xl text-white w-1/6 text-center mt-10">2</h2>  
+              <h1 class="text-5xl  pl-5 Caveat green-dark mt-10">PASSO 2: Cozinhar por 15 minutos!</h1>
+            </div>
+            <div class="flex w-full">
+                <p class="flex items-center justify-center w-full">Em uma tigela, misture a carne moída com sal e pimenta a gosto. Modele em formato de hambúrguer e coloque na frigideira com as cebolas.
+                Deixe dourar por cerca de 5 minutos de cada lado. Enquanto isso, aqueça o pão no forno por 3 minutos para deixá-lo levemente crocante. </p>
+                <img src="../../imgs/comida/Hambúrguer.png" alt="">
+            </div>
+            </div>
+        </section>
+
+         <section class="w-8/10 flex gap-x-5 justify-center">
+             <div class="flex flex-col items-start w-2/3">   
+            <div class="flex items-center justify-center mt-10">
+              <h2 class="Caveat p-5 green-light text-5xl text-white w-1/6 text-center mt-10">3</h2>  
+              <h1 class="text-5xl  pl-5 Caveat green-dark mt-10">PASSO 3: Montar o lanche!</h1>
+            </div>
+            <div class="flex w-full mt-10">
+                <img src="../../imgs/comida/Monte.png" alt="">
+                <p class="flex items-center justify-center w-full ml-5">Monte o hambúrguer: comece com a base do pão, adicione folhas de alface, o hambúrguer, uma fatia de queijo, tomate, cebola caramelizada e finalize com o molho de sua preferência.
+                    Cubra com a outra metade do pão e sirva com batatas fritas ou salada! </p>
+            </div>
+            </div>
+        </section>
+
+        <section class="w-8/10 mt-10">
+            <h1 class="text-5xl  pl-5 Caveat green-dark mt-10 border-l-15">MÍDIA:</h1>
+            <div class="flex gap-x-10 p-5 items-center justify-center">
+                <img src="../../imgs/comida/vai2.png" alt="">
+                <img src="../../imgs/comida/Hambúrguer.png" alt="">
+                <img src="../../imgs/comida/vai.svg" alt="">
+            </div>
+        </section>
+
+        <section class="w-8/10">
+            <div class="flex gap-x-10">
+                <h1 class="text-5xl  pl-5 Caveat green-dark mt-10 border-l-15">Comentários:</h1>
+                <h1 class="text-5xl  pl-5 Caveat green-dark mt-10 border-l-15">Tutoriais:</h1>
+            </div>
+            <div class="w-full p-5 flex flex-col gap-y-5">
+                 <!--Comentário-->
+                <div class="w-2/4 bg-gray-100 p-5">
+                    <div class="flex items-center justify-start text-center gap-x-1">
+                        <img class="w-1/8" src="../../imgs/profile.png" alt="">
+                        <div class="flex flex-col">
+                            <h1 class="font-semibold text-2xl">Ivete Gaudéria</h1>
+                        <p class="text-green-600 text-center ">12 de junho ás 10:50</p>
+                        </div>
+                        <p class="text-green-600">@ivete2</p>
+                    </div>
+                    
+                    <p class="text-2xl w-full">Anciosa para experimentar.</p>
+                </div>
+                <!--Comentário-->
+                <div class="w-2/4 bg-gray-100 p-5">
+                    <div class="flex items-center justify-start text-center gap-x-1">
+                        <img class="w-1/8" src="../../imgs/profile.png" alt="">
+                        <div class="flex flex-col">
+                            <h1 class="font-semibold text-2xl">Ivete Gaudéria</h1>
+                        <p class="text-green-600 text-center ">12 de junho ás 10:50</p>
+                        </div>
+                        <p class="text-green-600">@ivete2</p>
+                    </div>
+                    
+                    <p class="text-2xl w-full">Anciosa para experimentar.</p>
+                </div>
+                 <!--Comentário-->
+                <div class="w-2/4 bg-gray-100 p-5">
+                    <div class="flex items-center justify-start text-center gap-x-1">
+                        <img class="w-1/8" src="../../imgs/profile.png" alt="">
+                        <div class="flex flex-col">
+                            <h1 class="font-semibold text-2xl">Ivete Gaudéria</h1>
+                        <p class="text-green-600 text-center ">12 de junho ás 10:50</p>
+                        </div>
+                        <p class="text-green-600">@ivete2</p>
+                    </div>
+                    
+                    <p class="text-2xl w-full">Anciosa para experimentar.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="w-8/10 flex items-center justify-center gap-x-10 mt-10">
+            <img src="../../imgs/profile.png" class="w-1/10" alt="">
+            <input class="w-6/8 background h-20 rounded-xl text-white text-2xl" type="text" name="" id="" placeholder="digite aqui seu comentário!">
+        </div>
+    </main>
+
+ <footer class="bottom-0 left-0 w-full text-white p-4 text-centerd  green-light flex items-center justify-center mt-30">
+    <img src="../../imgs/home_img/7 1.svg" class="w-2/12">
+    <p class=" text-xl mt-5 hidden md:block">© 2025 Fogo-Baixo. Todos os direitos reservados.</p>
+    <p class="block md:hidden">© 2025 Fogo-Baixo.</p>
+    <img src="../imgs/github_white.svg" class="w=1/12 h-7 mt-5 ml-5" alt="">
+  </footer>
+</body>
+
+</html>
