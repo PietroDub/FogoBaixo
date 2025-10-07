@@ -27,11 +27,9 @@ Documento da aplicação web
 ## 🌐 Descrição da Aplicação Web
 
 ### 1.1 Descrição
-Este projeto consiste no desenvolvimento de uma **aplicação web completa de delivery**, dinâmica e interativa.  
-Principais funcionalidades:  
-- Acompanhamento em tempo real da **localização do mercado, cliente, entregador e produto**.  
-- **Cadastro de usuários** e integração de toda a rede.  
-- Diferencial: **interatividade com receitas** e conexões com **redes sociais**, ampliando a experiência para além do simples processo de entrega.  
+Este projeto consiste no desenvolvimento de uma plataforma web de receitas interativa, voltada à promoção da alimentação saudável, prática e personalizada.
+A aplicação permite que os usuários criem, compartilhem e salvem receitas, interajam com outros membros da comunidade e acessem conteúdos integrados às redes sociais.
+Futuramente, o sistema poderá incluir integração externa com plataformas de compra de produtos alimentícios, mas o foco atual é a experiência culinária digital e o engajamento comunitário.
 
 ### 1.2 Métodos Utilizados (Front-End)
 - **HTML5, CSS3, JavaScript**  
@@ -49,13 +47,13 @@ Principais funcionalidades:
 ## 🎯 Objetivos
 
 ### 2.1 Geral
-Oferecer um **ambiente digital eficiente e dinâmico** para delivery, fortalecendo a marca e proporcionando **experiência diferenciada ao usuário**.  
-
-Recursos adicionais:  
-- Cupons, descontos e promoções  
-- Acompanhamento em tempo real  
-- Suporte direto  
-- Receitas integradas às redes sociais  
+Oferecer um ambiente digital eficiente, dinâmico e colaborativo para a comunidade culinária brasileira, que seja personalizável e interativo, atendendo diferentes perfis de usuários — desde iniciantes até profissionais.
+O objetivo é promover a troca de experiências e o aprendizado coletivo, permitindo que todos compartilhem, conversem e se inspirem por meio da culinária.
+Recursos adicionais incluem:
+- Cupons, descontos e promoções exclusivas;
+- Acompanhamento em tempo real de receitas e planos alimentares;
+- Suporte direto e ágil aos usuários;
+- Integração com redes sociais para compartilhamento e engajamento.
 
 ---
 
@@ -70,11 +68,11 @@ Um **documento de requisitos de sistema** registra as especificações que o sis
 | RF01 | Cadastrar usuário |
 | RF02 | Login e logout de usuários |
 | RF03 | Gerenciar perfil do usuário |
-| RF04 | Pesquisar produtos |
-| RF05 | Exibir catálogo de produtos |
-| RF06 | Adicionar produtos ao carrinho |
-| RF07 | Finalizar pedido |
-| RF08 | Acompanhar status do pedido |
+| RF04 | Pesquisar receitas por nome, ingrediente ou categoria |
+| RF05 | Filtrar receitas por restrições alimentares |
+| RF06 | Salvar receitas favoritas |
+| RF07 | Criar listas personalizadas (cardápios ou semanas) |
+| RF08 | Compartilhar receitas em redes sociais |
 | RF09 | Cadastrar e gerenciar receitas |
 | RF10 | Visualizar receitas |
 | RF11 | Interagir com receitas |
@@ -82,10 +80,10 @@ Um **documento de requisitos de sistema** registra as especificações que o sis
 | RF13 | Página de contato |
 | RF14 | Página “Quem somos” |
 | RF15 | Sistema de cupons/descontos |
-| RF16 | Administração de pedidos e estoque |
-| RF17 | Poder verificar pedidos antigos e os produtos nele contidos |
-| RF18 | Gerar agenda para encomenda de pedidos |
-
+| RF16 | Sistema de avaliação e comentários |
+| RF17 | Sugestões automáticas com base no histórico do usuário |
+| RF18 | Exibir produtos relacionados às receitas (ingredientes, utensílios, livros etc.) |
+| RF19 | Integrar produtos de parceiros externos (via API ou catálogo próprio) |
 
 ---
 
@@ -117,65 +115,22 @@ Um **documento de requisitos de sistema** registra as especificações que o sis
 - Receitas personalizadas por perfil, restrições e objetivos  
 - Plataforma colaborativa, simples e acessível  
 
-### Parcerias-Chave
-- Influenciadores e nutricionistas  
-- Mercado (dono do projeto)  
-- Plataformas de pagamento  
-- Serviços de hospedagem  
-
-### Atividades-Chave
-- Desenvolvimento e atualização da plataforma  
-- Gestão de parcerias com mercados e entregadores  
-- Suporte técnico e atendimento ao cliente  
-- Criação e curadoria de conteúdo (receitas e promoções)  
-- Estratégias de marketing digital  
-
-### Proposta de Valor
-- Plataforma de delivery dinâmica, eficiente e responsiva  
-- Acompanhamento em tempo real  
-- Cupons, descontos e promoções exclusivas  
-- Suporte direto para dúvidas e problemas  
-- Interatividade via receitas e redes sociais  
-
-### Segmentos de Clientes
-- Consumidores de delivery  
-- Mercados e estabelecimentos locais  
-- Pequenos produtores de alimentos  
-- Usuários interessados em culinária caseira  
-- Entregadores autônomos  
-
-### Canais
-- Aplicação web responsiva  
-- Redes sociais (Instagram, Facebook, TikTok)  
-- E-mail marketing e push notifications  
-- Programas de indicação  
-
-### Relacionamento com o Cliente
-- Atendimento via chat ou FAQ  
-- Programas de fidelidade  
-- Conteúdo interativo (receitas, promoções)  
-- Suporte rápido e personalizado  
-
-### Fontes de Receita
-- Taxa sobre pedidos  
-- Parcerias com mercados  
-- Espaço publicitário na plataforma  
-- Programas premium para usuários  
-- Parcerias com marcas de alimentos  
-
-### Recursos-Chave
-- Equipe de desenvolvimento  
-- Infraestrutura tecnológica (servidores, banco de dados, APIs)  
-- Integração com pagamentos online  
-- Base de usuários ativos  
-- Conteúdo de receitas  
-
-### Estruturas de Custo
-- Desenvolvimento e manutenção  
-- Hospedagem e APIs  
-- Marketing digital  
-- Suporte e atendimento  
-- Parcerias e fornecedores  
+| RN01 |– Todo conteúdo publicado deve estar relacionado a receitas, alimentação saudável ou temas culinários.
+| RN02 |– Usuários podem publicar receitas próprias desde que sigam as políticas da plataforma (sem plágio, conteúdo ofensivo ou impróprio).
+| RN03 |– Receitas devem conter título, ingredientes, modo de preparo e tempo de execução.
+| RN04 |– Parceiros comerciais (marcas, nutricionistas, chefs, lojas) precisam de conta verificada para exibir produtos ou conteúdos patrocinados.
+| RN05 |– Produtos de parceiros devem ser previamente aprovados pela equipe de curadoria.
+| RN06 |– O sistema deve registrar comissões de vendas provenientes de afiliados.
+| RN07 |– Anúncios e parcerias devem respeitar a categoria de conteúdo do usuário (ex: mostrar produtos fitness para quem busca receitas saudáveis).
+| RN08 |– Planos premium devem liberar recursos adicionais, como cardápios personalizados e relatórios nutricionais.
+| RN09 |– Receitas patrocinadas devem ser sinalizadas como tal na interface.
+| RN10 |– Cada usuário deve ter um perfil único, com histórico de interações e receitas salvas.
+| RN11 |– O sistema deve recomendar conteúdo com base nas preferências e restrições do usuário.
+| RN12 |– Comentários e avaliações podem ser denunciados e serão moderados pela equipe técnica.
+| RN13 |– A comunicação com usuários pode ocorrer via notificações, e-mail ou redes sociais integradas.
+| RN14 |– Os usuários podem compartilhar receitas em redes sociais diretamente pela plataforma.
+| RN15 |– Custos de hospedagem e manutenção devem ser provisionados mensalmente.
+| RN16 |– A atualização do banco de dados e segurança do sistema devem ser realizadas de forma recorrente.
 
 ---
 
