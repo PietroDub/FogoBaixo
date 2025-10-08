@@ -182,3 +182,6 @@ Durante o desenvolvimento do **Fogo Baixo**, utilizamos metodologias ágeis e it
 - Expansão contínua de funcionalidades e banco de dados  
 
 ➡️ O projeto visa oferecer uma **abordagem inovadora na culinária brasileira**, unindo tecnologia, praticidade e experiência gastronômica.  
+
+## Membros:
+
