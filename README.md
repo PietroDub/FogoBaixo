@@ -40,7 +40,7 @@ Futuramente, o sistema poderá incluir integração externa com plataformas de c
 ### 1.3 Cronograma do Projeto
 📌 O cronograma detalhado está disponível em:  
 👉 **[Receitas P1 | Trello](#)**  
-<img src="./imgs/trello.jpeg" alt="Tela inicial" width="300"/>
+<img src="./docx/trello.jpeg" alt="Trello" width="300"/>
 
 ---
 
@@ -136,40 +136,41 @@ Um **documento de requisitos de sistema** registra as especificações que o sis
 
 ### 4.2 BM Canvas
 - Modelo de negócios canva, organizando visualmente os objetivos e necessidades do projeto.
-<img src="./assets/mockup1.jpg" alt="Tela inicial" width="300"/>
+<img src="./docx/BmCanvas.png" alt="Bm canvas" width="400"/>
 
 ## 🎨 Design
 
 - **Paleta de cores:** *(a ser definida)*
-- <img src="./assets/mockup1.jpg" alt="Tela inicial" width="300"/>
+- <img src="./docx/paleta.png" alt="Paleta FB" width="300"/>
 - **Tipografia:** *(a ser escolhida)*
-- <img src="./assets/mockup1.jpg" alt="Tela inicial" width="300"/>
-- **Logo:** *(template inicial)*
-- <img src="./assets/mockup1.jpg" alt="Tela inicial" width="300"/>
+- <img src="./docx/font.png" alt="Tipografia FB" width="300"/>
+- **Logo:** 
+- <img src="./docx/6.png" alt="Logo FB" width="300"/>
+- <img src="./docx/7.png" alt="Logo FB" width="300"/>
+- <img src="./docx/9.png" alt="Logo FB" width="300"/>
 
 ### 4.4 Wireframe
 Wireframe disponível no Figma:  
-👉 [Acessar Wireframe](https://www.figma.com/design/pcAL45RIRkzJonJIfegYL8/Wireframe---Protocolo-Rural?node-id=0-1&t=fn86gsElgTURtnbu-1)  
+👉 [Acessar Wireframe](https://www.figma.com/design/vUViGgaIlrKPADdi3aWy3O/fogobaixo?node-id=482-46&p=f&t=5MafbUaEFfYEipWj-0)  
 
 ---
 
-## 🧭 Modelo de Navegação
-*(Inserir imagem e descrição do modelo de navegação)*  
-<img src="./assets/mockup1.jpg" alt="Tela inicial" width="300"/>
+## 🧭 Modelo de Navegação![alt text](modeloNave.png)
+<img src="./docx/modeloNave.png" alt="Tela inicial" width="300"/>
 
 ---
 
 ## 🖌️ Prototipagem
 Protótipo criado no Figma:  
-👉 [Acessar Protótipo](https://www.figma.com/design/vUViGgaIlrKPADdi3aWy3O/Untitled?node-id=0-1&t=ATtDGzXCgMVPFe7U-1)  
-<img src="./imgs/home-page.png" alt="Tela inicial figma" width="300"/>
+👉 [Acessar Protótipo](https://www.figma.com/design/vUViGgaIlrKPADdi3aWy3O/fogobaixo?t=5MafbUaEFfYEipWj-0)  
+<img src="./docx/figma.png" alt="Tela inicial figma" width="300"/>
 
 ---
 
 ## 💻 Aplicação
 Repositório do projeto disponível no GitHub:  
 👉 [Acessar Repositório](#)  
-<img src="./assets/mockup1.jpg" alt="Tela inicial" width="300"/>
+<img src="./docx/aplication.jpeg " alt="Tela inicial" width="300"/>
 
 ---
 
@@ -180,4 +181,4 @@ Durante o desenvolvimento do **Fogo Baixo**, utilizamos metodologias ágeis e it
 - Ciclos curtos de desenvolvimento com Scrum  
 - Expansão contínua de funcionalidades e banco de dados  
 
-➡️ O projeto visa oferecer uma **abordagem inovadora na culinária e nicho de delivery brasileiro**, unindo tecnologia, praticidade e experiência gastronômica.  
+➡️ O projeto visa oferecer uma **abordagem inovadora na culinária brasileira**, unindo tecnologia, praticidade e experiência gastronômica.  
