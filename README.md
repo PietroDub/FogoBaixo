@@ -105,7 +105,40 @@ Um **documento de requisitos de sistema** registra as especificações que o sis
 ---
 
 ### 3.3 📌 Casos de Uso
-*(Inserir tabela/diagrama de casos de uso)*  
+1. Cadastro de Usuário
+Permite que visitantes criem uma conta informando dados como nome, e-mail e senha. Após o cadastro, o usuário pode acessar funcionalidades restritas da plataforma.
+👤 User (Usuário autenticado)
+2. Fazer Login/Logout
+O usuário realiza o login inserindo suas credenciais (e-mail e senha). O logout encerra a sessão de forma segura, garantindo a privacidade dos dados.
+3. Pesquisar Receitas
+Permite buscar receitas por nome, categoria ou ingrediente, facilitando o acesso ao conteúdo desejado.
+4. Filtrar Receitas por Restrições Alimentares
+Usuário pode aplicar filtros personalizados (ex: sem glúten, vegano, low carb) para visualizar apenas receitas compatíveis com suas preferências.
+5. Salvar/Favoritar Receitas
+Permite salvar receitas favoritas em uma lista pessoal, acessível posteriormente.
+6. Criar Listas Personalizadas
+Usuário organiza suas receitas em listas temáticas, como “Sobremesas”, “Fitness” ou “Café da manhã”.
+7. Compartilhar Receitas
+Facilita o compartilhamento de receitas via redes sociais ou links diretos, ampliando o alcance da comunidade.
+8. Cadastrar e Gerenciar Receitas
+Usuário pode adicionar suas próprias receitas, editar detalhes, atualizar informações ou removê-las.
+9. Visualizar Receitas
+Exibe informações completas de uma receita: ingredientes, modo de preparo, tempo, imagens e avaliações.
+10. Interagir com Receitas
+O usuário pode curtir, comentar e avaliar receitas de outros membros, promovendo engajamento e feedback.
+11. Entrar em Contato com a Equipe
+Abre um canal de comunicação para dúvidas, sugestões ou suporte técnico.
+12. Avaliação e Comentários
+Permite publicar opiniões e notas nas receitas, contribuindo com a reputação do autor e a qualidade do conteúdo.
+👨‍💼 Admin (Administrador)
+13. Entrar em Contato com o Usuário
+O administrador pode responder mensagens ou contatar usuários para resolver problemas ou moderar interações.
+14. Integrar Produtos de Parceiros
+Permite cadastrar e vincular produtos de marcas parceiras às receitas, com controle de exibição e curadoria.
+15. Remover Usuário
+Função que permite excluir contas que violam as políticas da plataforma ou estão inativas.
+16. Bloquear Usuário
+Suspende temporariamente o acesso de um usuário em casos de mau uso, spam ou comportamento indevido.
 
 ---
 
