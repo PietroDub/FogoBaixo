@@ -171,6 +171,10 @@ Suspende temporariamente o acesso de um usuário em casos de mau uso, spam ou co
 - Modelo de negócios canva, organizando visualmente os objetivos e necessidades do projeto.
 <img src="./docx/BmCanvas.png" alt="Bm canvas" width="400"/>
 
+### 4.3 Diagrama de Classes
+- Um diagrama que mapeia de forma clara a estrutura de um determinado sistema ao modelar suas classes, seus atributos, operações e relações entre objetos.
+<img src="./docx/DiagramaClasses.png" alt="Diagrama" width="400"/>
+
 ## 🎨 Design
 
 - **Paleta de cores:** *(a ser definida)*
