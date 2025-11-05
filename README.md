@@ -7,9 +7,15 @@
     <h2>Curso de Tecnologia em Desenvolvimento de Software Multiplataforma</h2>
     <h2>Início: 1º Semestre / 2025</h2>
 </div>
-Documento da aplicação web
 
----
+<h2>Participantes Diretos:</h2>
+<a href="https://github.com/juninh0-dev">Altair Godoi</a>
+<br>
+<a href="https://github.com/DiegoLopes-da-Silva">Diego Lópes</a>
+<br>
+<a href="https://github.com/betzfer">Miguel Rodriguez</a>
+<br>
+<a href="https://github.com/PietroDub">Pietro Vito</a>
 
 ## 📖 Sumário
 - [Descrição da Aplicação Web](#-descrição-da-aplicação-web)  
@@ -148,24 +154,25 @@ Suspende temporariamente o acesso de um usuário em casos de mau uso, spam ou co
 - Receitas personalizadas por perfil, restrições e objetivos  
 - Plataforma colaborativa, simples e acessível  
 
-| RN01 |– Todo conteúdo publicado deve estar relacionado a receitas, alimentação saudável ou temas culinários.
-| RN02 |– Usuários podem publicar receitas próprias desde que sigam as políticas da plataforma (sem plágio, conteúdo ofensivo ou impróprio).
-| RN03 |– Receitas devem conter título, ingredientes, modo de preparo e tempo de execução.
-| RN04 |– Parceiros comerciais (marcas, nutricionistas, chefs, lojas) precisam de conta verificada para exibir produtos ou conteúdos patrocinados.
-| RN05 |– Produtos de parceiros devem ser previamente aprovados pela equipe de curadoria.
-| RN06 |– O sistema deve registrar comissões de vendas provenientes de afiliados.
-| RN07 |– Anúncios e parcerias devem respeitar a categoria de conteúdo do usuário (ex: mostrar produtos fitness para quem busca receitas saudáveis).
-| RN08 |– Planos premium devem liberar recursos adicionais, como cardápios personalizados e relatórios nutricionais.
-| RN09 |– Receitas patrocinadas devem ser sinalizadas como tal na interface.
-| RN10 |– Cada usuário deve ter um perfil único, com histórico de interações e receitas salvas.
-| RN11 |– O sistema deve recomendar conteúdo com base nas preferências e restrições do usuário.
-| RN12 |– Comentários e avaliações podem ser denunciados e serão moderados pela equipe técnica.
-| RN13 |– A comunicação com usuários pode ocorrer via notificações, e-mail ou redes sociais integradas.
-| RN14 |– Os usuários podem compartilhar receitas em redes sociais diretamente pela plataforma.
-| RN15 |– Custos de hospedagem e manutenção devem ser provisionados mensalmente.
-| RN16 |– A atualização do banco de dados e segurança do sistema devem ser realizadas de forma recorrente.
+| Código | Descrição |
+|--------|------------|
+| RN01 | Todo conteúdo publicado deve estar relacionado a receitas, alimentação saudável ou temas culinários. |
+| RN02 | Usuários podem publicar receitas próprias desde que sigam as políticas da plataforma (sem plágio, conteúdo ofensivo ou impróprio). |
+| RN03 | Receitas devem conter título, ingredientes, modo de preparo e tempo de execução. |
+| RN04 | Parceiros comerciais (marcas, nutricionistas, chefs, lojas) precisam de conta verificada para exibir produtos ou conteúdos patrocinados. |
+| RN05 | Produtos de parceiros devem ser previamente aprovados pela equipe de curadoria. |
+| RN06 | O sistema deve registrar comissões de vendas provenientes de afiliados. |
+| RN07 | Anúncios e parcerias devem respeitar a categoria de conteúdo do usuário |
+| RN08 | Planos premium devem liberar recursos adicionais, como cardápios personalizados e relatórios nutricionais. |
+| RN09 | Receitas patrocinadas devem ser sinalizadas como tal na interface. |
+| RN10 | Cada usuário deve ter um perfil único, com histórico de interações e receitas salvas. |
+| RN11 | O sistema deve recomendar conteúdo com base nas preferências e restrições do usuário. |
+| RN12 | Comentários e avaliações podem ser denunciados e serão moderados pela equipe técnica. |
+| RN13 | A comunicação com usuários pode ocorrer via notificações, e-mail ou redes sociais integradas. |
+| RN14 | Custos de hospedagem e manutenção devem ser provisionados mensalmente. |
+| RN15 | Os usuários podem compartilhar receitas em redes sociais diretamente pela plataforma. |
+| RN16 | A atualização do banco de dados e segurança do sistema devem ser realizadas de forma recorrente. |
 
----
 
 ### 4.2 BM Canvas
 - Modelo de negócios canva, organizando visualmente os objetivos e necessidades do projeto.
