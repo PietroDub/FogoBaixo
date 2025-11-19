@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sobre</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--Fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+<style>
+        .Caveat {
+  font-family: 'Caveat Brush', cursive;
+             }
+        .IBM {
+            font-family: "IBM Plex Sans Thai", sans-serif;;
+        }
+        .Gudea {
+            font-family: "Gudea", sans-serif;
+            font-style: normal;
+        } 
+        .just-me {
+            font-family: "Just Me Again Down Here", cursive;;
+            font-style: normal;
+        }
+        .piedra {
+             font-family: "Piedra", serif;
+             font-style: normal;
+        }
+
+
+      
+
+    </style>
+</head>
+<body class="w-full flex flex-col">
+    <header class="w-full bg-[url('../imgs/header_background.svg')] bg-no-repeat bg-cover bg-center text-green-600 flex flex-col items-center">
+        <div class="head w-full flex p-5 items-center justify-center space-x-6 ">
+        <a href="home.php" class="hidden md:block w-2/12 md:mr-10">
+            <img src="../imgs/home_img/7 1.svg" alt="logo_fogo_baixo" class="w-full">
+        </a>
+        <a href="home.php" class="w-3/12  md:sr-only "><img src="../imgs/home_img/logo_mobile.svg" class="" alt=""></a>
+<!--<input type="search" class="bg-white w-4/12 h-10 rounded-full sr-only md:not-sr-only" name="searchHome" id="searchHome"> <!-->
+        <input type="search" class="bg-white rounded-full md:w-3/12 md:h-10 hidden md:block" name="" id="">
+        <nav class="space-x-6 pl-5 md:flex">
+            <a href="login.php" class="border-l-5 pl-1 text-2xl">Log-in</a>
+            <a href="" class="border-l-5 pl-1 text-2xl">Sign-in</a>
+        </nav>
+        <a href="Perfil.php"><img src="../imgs/home_img/Perfil_Template.svg" alt="" class="w-20"></a>
+
+    </div>
+    <div class="h-2 w-10/12 flex bg-green-600"></div>
+        <nav class="text-white flex gap-x-10 my-5 IBM item justify-center p-5">
+            <a href="vegans.php" class="border-l-5 border-green-600 pl-2 text-2xl hidden md:block">Veganas</a>
+            <a href="Massas.php" class="border-l-5 border-green-600 pl-2 text-2xl">Massas</a>
+            <a href="Doces.php" class="border-l-5 border-green-600 pl-2 text-2xl">Doces</a>
+            <a href="Fitness.php" class="border-l-5 border-green-600 pl-2 text-2xl">Fitness</a>
+            <a href="região.php" class="border-l-5 border-green-600 pl-2 text-2xl">Regionais</a>
+            <a href="Recomendados.php" class="border-l-5 border-green-600 pl-2 text-2xl hidden md:block">Outros..</a>
+        </nav>
+    </div>
+</header>
+
+   <h1 class="Caveat text-5xl green-dark border-l-10 pl-5 ml-20 mt-10">
+    CRIADORES DO SITE!
+   </h1>
+
+   <section class="w-full flex flex-col justify-center items-center mb-20">
+    <div class="w-10/12 card-criador border-6 flex flex-col md:flex md:flex-row items-center justify-center gap-x-10 p-5 mt-10">
+      <div>
+        <img src="../imgs/Pietro_profile.jfif" class="rounded-full" alt="">
+      </div>
+      <div class="w-10/12 md:w-7/12">
+        <h1 class="Caveat text-5xl green-dark hidden md:block">Pietro Vito</h1>
+        <h1 class="flex md:hidden Caveat text-5xl green-dark text-center items-center justify-center">Pietro Vito</h1>
+        <p class="text-2xl font-semibold Caveat hidden lg:block">Atuante como desenvolvedor master, membro foi responsável por liderar a construção técnica do projeto, assegurando performance, escalabilidade e integração entre os módulos.
+        Também contribuiu significativamente como designer, cuidando da identidade visual e da coerência estética da interface.</p>
+        <p class="text-2xl font-semibold Caveat hidden md:block">Atuante como desenvolvedor master, membro foi responsável por liderar a construção técnica do projeto, assegurando performance, escalabilidade e integração entre os módulos.
+        Também contribuiu significativamente como designer.</p>
+        <p class="block md:hidden text-2xl font-semibold Caveat">Atuante como desenvolvedor master, membro foi responsável por liderar a construção técnica do projeto, assegurando performance, escalabilidade e integração entre os módulos.</p>
+        <div class="flex m-10 justify-center">
+            <div class=" flex gap-x-3 text-4xl text-green-600 mr-10 items-center justify-center hidden md:flex">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-youtub"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="flex gap-x-3 text-5xl text-green-600 md:hidden">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="gap-x-3 items-center hidden lg:flex">
+                <p class="Caveat text-3xl text-green-600">Email de contato:</p>
+                <p class="Gudea text-xl">pietro.vito@gmail.com</p>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="w-10/12 card-criador border-6 flex flex-col md:flex md:flex-row items-center justify-center gap-x-10 p-5 mt-10">
+       <div class="w-10/12 md:w-7/12">
+           <h1 class="Caveat text-5xl green-dark hidden md:block">Miguel Rodrigues</h1>
+           <h1 class="flex md:hidden Caveat text-5xl green-dark text-center items-center justify-center">Miguel Rodrigues</h1>
+           <p class="text-2xl font-semibold Caveat hidden lg:block">Atuante como desenvolvedor master, membro foi responsável por liderar a construção técnica do projeto, assegurando performance, escalabilidade e integração entre os módulos.
+               Também contribuiu significativamente como designer, cuidando da identidade visual e da coerência estética da interface.</p>
+               <p class="text-2xl font-semibold Caveat hidden md:block">Atuante como desenvolvedor master, membro foi responsável por liderar a construção técnica do projeto, assegurando performance, escalabilidade e integração entre os módulos.
+                   Também contribuiu significativamente como designer.</p>
+                   <p class="block md:hidden text-2xl font-semibold Caveat">Atuante como desenvolvedor master, membro foi responsável por liderar a construção técnica do projeto, assegurando performance, escalabilidade e integração entre os módulos.</p>
+                   <div class="flex m-10 justify-center">
+                       <div class=" flex gap-x-3 text-4xl text-green-600 mr-10 items-center justify-center hidden md:flex">
+                           <i class="fa-brands fa-github"></i>
+                           <i class="fa-brands fa-youtub"></i>
+                           <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div class="flex gap-x-3 text-5xl text-green-600 md:hidden">
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div class="gap-x-3 items-center hidden lg:flex">
+                            <p class="Caveat text-3xl text-green-600">Email de contato:</p>
+                            <p class="Gudea text-xl">miguel.oliveira@gmail.com</p>
+                        </div>
+                    </div>
+        </div>
+                <div>
+                  <img src="../imgs/miguel.jpg" class="rounded-full" alt="">
+                </div>
+   </div>
+   </section>
+   
+   <footer class="bottom-0 left-0 w-full text-white p-4 text-center green-light flex items-center justify-center">
+    <img src="../imgs/home_img/7 1.svg" class="w-4/12 md:w-2/12">
+    <p class=" text-xl mt-5 ">© 2025 Fogo-Baixo. Todos os direitos reservados.</p>
+    <p class="sr-only">todos os direitos reservados</p>
+    <img src="../imgs/github_white.svg" class="md:w-1/12 h-7 mt-5 ml-5" alt="">
+  </footer>
+</body>
+</html>

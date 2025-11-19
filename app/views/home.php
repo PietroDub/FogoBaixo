@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!--Fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+<style>
+        .Caveat {
+  font-family: 'Caveat Brush', cursive;
+             }
+        .IBM {
+            font-family: "IBM Plex Sans Thai", sans-serif;;
+        }
+        .Gudea {
+            font-family: "Gudea", sans-serif;
+            font-style: normal;
+        } 
+        .just-me {
+            font-family: "Just Me Again Down Here", cursive;;
+            font-style: normal;
+        }
+        .piedra {
+             font-family: "Piedra", serif;
+             font-style: normal;
+        }
+
+
+    </style>
+
+</head>
+
+<body class="h-screen w-full m-0 p-0">
+ <header class="w-full min-h-screen bg-[url('assets/imgs/home_img/bg_header.svg')] bg-no-repeat bg-cover bg-center text-green-600 flex flex-col items-center">
+    <div class="head w-full flex p-5 items-center justify-center space-x-6">
+        <a href="../app/views/home.php" class="hidden md:block w-2/12 md:mr-10">
+            <img src="assets/imgs/home_img/7 1.svg" alt="logo_fogo_baixo" class="w-full">
+        </a>
+        <img src="assets/imgs/home_img/logo_mobile.svg" class="w-3/12 md:sr-only " alt="">
+<!--<input type="search" class="bg-white w-4/12 h-10 rounded-full sr-only md:not-sr-only" name="searchHome" id="searchHome"> <!-->
+        <input type="search" class="bg-white rounded-full md:w-3/12 sr-only md:not-sr-only md:h-10" name="" id="">
+        <nav class="space-x-6 pl-5 md:flex">
+            <a href="../app/views/login.php" class="border-l-5 pl-1 text-2xl">Log-in</a>
+            <a href="../app/views/cadastro.php" class="border-l-5 pl-1 text-2xl">Sign-in</a>
+        </nav>
+        <a href="Perfil.php"><img src="assets/imgs/home_img/Perfil_Template.svg" alt="" class="w-20"></a> 
+    </div>
+    <div class="h-2 bg-black w-10/12 flex bg-green-600"></div>
+    <nav class="text-white flex gap-x-10 my-5 IBM">
+        <a href="../app/views/vegans.php" class="border-l-3 border-green-600 pl-2 text-2xl sr-only md:not-sr-only">Veganas</a>
+        <a href="../app/views/Massas.php" class="border-l-3 border-green-600 pl-2 text-2xl">Massas</a>
+        <a href="../app/views/Doces.php" class="border-l-3 border-green-600 pl-2 text-2xl">Doces</a>
+        <a href="../app/views/Fitness.php" class="border-l-3 border-green-600 pl-2 text-2xl">Fitness</a>
+        <a href="../app/views/região.php" class="border-l-3 border-green-600 pl-2 text-2xl">Regionais</a>
+        <a href="../app/views/Recomendados.php" class="border-l-3 border-green-600 pl-2 text-2xl sr-only md:not-sr-only">Outros..</a>
+    </nav>
+    <div class="gap-0 flex flex-col justify-center items-center">
+         <h1 class="text-white just-me sub">Bateu a</h1>
+    <h1 class="text-white piedra titulo_home"><b>FOME</b></h1>
+    <h2 class="text-white Gudea font-semibold text-2xl sr-only md:not-sr-only">Receitas das  mais simples ate as mais complexas!</h2>
+    </div>
+   
+</header>
+
+<main class="m-0 p-0 flex-grow">   
+    <div class="flex flex-col md:flex flex-row Caveat">
+        <div class="md:flex md:flex-row">
+            <h1 class="text-green-600 text-5xl w-8/10 md:w-3/12 border-l-10 ml-5 md:ml-20 mt-10 pl-2">
+      RECEITAS EM ALTA!
+        </h1>
+        <h1 class="brown text-3xl w-8/10 md:w-4/12 border-l-10 ml-5 md:ml-20 mt-10 pl-2">
+      Pensamos o melhor para suas preferências e gostos.
+        </h1>
+        </div>
+        <div class="flex justify-center items-center mt-10 gap-x-5">
+            <a href="../app/views/Em_Alta.php" class="border-l-10 text-3xl brown pl-5">IR!</a>
+            <a href="../app/views/Em_Alta.php"><img src="assets/imgs/home_img/seta.png" class="sr-only md:not-sr-only" alt=""></a>
+        </div>
+    </div>
+
+    <div class="h-6/10 mt-40">
+        <div class="cards bg-[url('assets/imgs/home_img/bg_card_home.png')] bg-no-repeat bg-cover bg-center md:h-100 gap-x-10 flex items-center justify-center sr-only md:not-sr-only">
+            <div class="card1 flex flex-col items-center">
+           <a href="../app/views/receitas/macarrao.php">
+                 <img src="assets/imgs/home_img/Massas_template.svg" class="">
+                <p class="font-semibold">Macarrão muito bem temperado e com tomate</p>
+                <div class="array flx">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+           </a>
+
+            <a href="../app/views/receitas/hambúrguer.php">
+                <div class="card2 flex flex-col items-center">
+                <img src="assets/imgs/home_img/hamb_home.svg" class="border-green-600 border-6 rounded-xl" alt="">
+                <p class="font-semibold">Hambúrguer caseiro e saúdavél! Super simples!</p>
+                <div class="array flx">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+            </a>
+
+            <div class="card3">
+                <img src="assets/imgs/home_img/panq_home.svg" class="border-green-600 border-6 rounded-xl" alt="">
+                <p class="font-semibold">Panqueca americana doce para café da manhã!</p>
+                <div class="array flx">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+        
+    </div> 
+    <div class="cards_mobile p-5 flex flex-col bg-[url('assets/imgs/home_img/bg_card_home.png')] bg-no-repeat bg-cover bg-center items-center justify-center md:sr-only">
+             <a href="../app/views/receitas/macarrao.php">
+                <div class="card3 bg-white flex-col p-5 mt-5 rounded-xl">
+            <div class="flex">
+                <img src="assets/imgs/home_img/Massas_template.svg" alt="">
+                <div class="array flex justify-between flex-col w-full items-center py-4">
+                    <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">
+                    <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">
+                    <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">
+                    <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">
+                </div>
+            </div>
+                <p class="my-2 IBM">Macarrão muito bem temperado e com tomate (ECA)</p>
+            </div>
+             </a>
+
+             <div class="card3 bg-white flex-col p-5 mt-5 rounded-xl">
+            <div class="flex">
+                <img src="assets/imgs/home_img/panq_home.svg" alt="">
+                <div class="array flex justify-between flex-col w-full items-center py-6">
+                    <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">
+                    <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">
+                    <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">
+                    <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">
+                </div>
+            </div>
+                <p class="my-2 IBM">Panqueca americana doce para café da manhã!</p>
+            </div>
+
+            <a href="../app/views/receitas/hambúrguer.php">
+                <div class="card3 bg-white flex-col p-5 mt-5 rounded-xl">
+            <div class="flex">
+                <img src="assets/imgs/home_img/hamb_home.svg" alt="">
+                <div class="array flex justify-between flex-col w-full items-center py-4">
+                    <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">
+                    <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">
+                    <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">
+                    <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">
+                </div>
+            </div>
+                <p class="my-2 IBM">Hambúrguer caseiro e saúdavél! Super simples!</p>
+            </div>
+            </a>
+    </div>
+
+     <div class=" flex flex-col md:flex-row Para_você Caveat mt-30 ">
+        <h1 class="text-green-600 text-5xl w-8/10  md:w-3/12 border-l-10 ml-20 mt-10 pl-2">
+            O MELHOR PARA VOCÊ!
+        </h1>
+        <h1 class="brown text-3xl w-8/10  md:w-4/12 border-l-10 ml-20 mt-10 pl-2">
+            Pensamos o melhor para suas preferências e gostos.
+        </h1>
+        <div class="flex justify-center items-center mt-10 gap-x-5">
+            <h1 class="border-l-10 text-3xl brown pl-5">IR!</h1>
+            <a href="../app/views//Recomendados.php"><img src="assets/imgs/home_img/seta.png" alt=""></a>
+        </div>
+    </div>
+    <div class="Recomendações w-10/12   text-center Gudea  flex flex-col justify-self-center gap-10 md:grid md:grid-cols-3 md:grid-rows-2 md:gap-5 my-15">
+        <a href="../app/views/Doces.php"><div class="text-white flex items-center justify-center bg-[url('assets/imgs/home_img/BreakFast.svg')] bg-no-repeat bg-cover bg-center flex relative">
+            <h1 class="text-4xl py-20"><b>Doces</b></h1>
+            <div class="bg-green-600 h-1/3 w-1/7 green-light right-4 bottom-4 absolute"></div>
+        </div></a>
+        <a href="../app/views/FastFood.php">
+            <div class="text-white flex items-center justify-center bg-[url('assets/imgs/home_img/FastFood.svg')] bg-no-repeat bg-cover bg-center flex relative">
+            <h1 class="text-4xl py-20"><b>FastFood</b></h1>
+            <div class="bg-green-600 h-1/3 w-1/7 green-light right-4 bottom-4 absolute"></div>
+        </div>
+        </a>
+        <a href="../app/views/carnes.php">
+            <div class="text-white flex items-center justify-center bg-[url('assets/imgs/home_img/Churras.svg')] bg-no-repeat bg-cover bg-center flex relative">
+            <h1 class="text-4xl py-20"><b>Churrasco</b></h1>
+            <div class="bg-green-600 h-1/3 w-1/7 green-light right-4 bottom-4 absolute"></div>
+        </div>
+        </a>
+        <a href="../app/views/vegans.php">
+            <div class="text-white flex items-center justify-center bg-[url('assets/imgs/home_img/Vegan.svg')] bg-no-repeat bg-cover bg-center flex relative">
+            <h1 class="text-4xl py-20"><b>Veganas</b></h1>
+            <div class="bg-green-600 h-1/3 w-1/7 green-light right-4 bottom-4 absolute"></div>
+        </div>
+        </a>
+        <a href="../app/views/Massas.php">
+            <div class="text-white flex items-center justify-center bg-[url('assets/imgs/home_img/Massas.svg')] bg-no-repeat bg-cover bg-center flex relative">
+            <h1 class="text-4xl py-20"><b>Massas</b></h1>
+            <div class="bg-green-600 h-1/3 w-1/7 green-light right-4 bottom-4 absolute"></div>
+        </div>
+        </a>
+        <a href="../app/views/região.php">
+            <div class="text-white flex items-center justify-center bg-[url('assets/imgs/home_img/Asian.svg')] bg-no-repeat bg-cover bg-center flex relative">
+            <h1 class="text-4xl py-20"><b>Regionais</b></h1>
+            <div class="bg-green-600 h-1/3 w-1/7 green-light right-4 bottom-4 absolute"></div>
+        </div>
+        </a>
+    </div>
+
+    <div class="osChefes w-full h-full">
+        <div class=" border-l-10 sm:flex w-9/10 justify-self-center md:flex-none md:ml-20 pl-5 text-green-600 my-5 md:my-10">
+            <h1 class="text-5xl Caveat ">
+                CHEFES MAIS BEM AVALIADOS!
+            </h1>
+        </div>
+        <div class="background h-150 flex justify-center">
+            <div class="back-2 background border-white border-4 h-full w-11/12 flex justify-center">
+                <div class="back-2 background border-white border-4 h-full w-11/12 flex">
+                     <div class="p-10 md:w-7/12 my-10 flex flex-col items-center justify-center]">
+                        <h1 class="text-3xl Caveat text-white">Os chefes mais renomados do fogobaixo! Com avaliações feitas por pessoas com gostos bons, como o seus!</h1>
+                        
+                        <div class="hidden xl:grid xl:grid-cols-3 xl:grid-rows-2 mt-10 gap-4 Caveat">
+                            <div class="flex items-center div p-5 gap-x-6 rounded-xl">
+                                <img src="assets/imgs/home_img/Perfil_Template.svg" class="h-15" alt="">
+                                <h1 class="text-2xl">Chefe</h1>
+                                <div class=" flex">
+                                    <img src="assets/imgs/home_img/Star.png" class="" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                </div>
+
+                            </div>
+
+                             <div class="flex items-center div p-5 gap-x-6 rounded-xl">
+                                <img src="assets/imgs/home_img/Perfil_Template.svg" class="h-15" alt="">
+                                <h1 class="text-2xl">Chefe</h1>
+                                <div class=" flex">
+                                    <img src="assets/imgs/home_img/Star.png" class="" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                </div>
+
+                            </div>
+
+                             <div class="flex items-center div p-5 gap-x-6 rounded-xl">
+                                <img src="assets/imgs/home_img/Perfil_Template.svg" class="h-15" alt="">
+                                <h1 class="text-2xl">Chefe</h1>
+                                <div class=" flex">
+                                    <img src="assets/imgs/home_img/Star.png" class="" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                </div>
+
+                            </div>
+
+                             <div class="md:flex md:items-center div md:p-5 md:gap-x-6 md:rounded-xl sr-only md:not-sr-only">
+                                <img src="assets/imgs/home_img/Perfil_Template.svg" class="h-15" alt="">
+                                <h1 class="text-2xl">Chefe</h1>
+                                <div class=" flex">
+                                    <img src="assets/imgs/home_img/Star.png" class="" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                </div>
+
+                            </div>
+
+                             <div class="md:flex md:items-center div md:p-5 md:gap-x-6 md:rounded-xl sr-only md:not-sr-only">
+                                <img src="assets/imgs/home_img/Perfil_Template.svg" class="h-15" alt="">
+                                <h1 class="text-2xl">Chefe</h1>
+                                <div class=" flex">
+                                    <img src="assets/imgs/home_img/Star.png" class="" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                </div>
+
+                            </div>
+
+                             <div class="md:flex md:items-center div md:p-5 md:gap-x-6 md:rounded-xl sr-only md:not-sr-only">
+                                <img src="assets/imgs/home_img/Perfil_Template.svg" class="h-15" alt="">
+                                <h1 class="text-2xl">Chefe</h1>
+                                <div class=" flex">
+                                    <img src="assets/imgs/home_img/Star.png" class="" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+
+                    <div class="flex grid grid-rows-3 md:hidden">
+                        <div class="md:flex md:items-center div md:p-5 md:gap-x-6 md:rounded-xl sr-only md:not-sr-only">
+                                <img src="assets/imgs/home_img/Perfil_Template.svg" class="h-15" alt="">
+                                <h1 class="text-2xl">Chefe</h1>
+                                <div class=" flex">
+                                    <img src="assets/imgs/home_img/Star.png" class="" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                </div>
+
+                            </div>
+
+                             <div class="md:flex md:items-center div md:p-5 md:gap-x-6 md:rounded-xl sr-only md:not-sr-only">
+                                <img src="assets/imgs/home_img/Perfil_Template.svg" class="h-15" alt="">
+                                <h1 class="text-2xl">Chefe</h1>
+                                <div class=" flex">
+                                    <img src="assets/imgs/home_img/Star.png" class="" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                </div>
+
+                            </div>
+
+                             <div class="md:flex md:items-center div md:p-5 md:gap-x-6 md:rounded-xl sr-only md:not-sr-only">
+                                <img src="assets/imgs/home_img/Perfil_Template.svg" class="h-15" alt="">
+                                <h1 class="text-2xl">Chefe</h1>
+                                <div class="flex">
+                                    <img src="assets/imgs/home_img/Star.png" class="" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                    <img src="assets/imgs/home_img/Star.png" alt="">
+                                </div>
+                            </div>
+                          
+                    </div>
+                        
+                    <img src="assets/imgs/home_img/Lontra.svg" class="hidden md:block" alt="">                
+                </div>
+            </div>
+        </div>
+         <div class="md:ml-20 pl-5 my-5 md:my-10 flex items-center gap-x-5">
+                <h1 class="text-5xl Caveat text-green-600 border-l-10 pl-5">
+                    SOBRE NÓS!
+                </h1>
+                <div class="flex justify-center items-center  gap-x-5">
+                    <h1 class="border-l-10 text-3xl brown pl-5">IR!</h1>
+                    <a href="../app/views/sobre.php"><img src="assets/imgs/home_img/seta.png" alt=""></a>
+                </div>
+            </div>
+            <div class="justify-center gap-x-10 ml-20 hidden md:flex">
+                    <p class="text-2xl Gudea w-5/12 brown ml-20 hidden xl:flex">
+                Conheça a equipe criadora e os principais contribuidores que tornam este site possível.
+                Aqui, você vai descobrir as pessoas por trás das receitas, ideias e inovações que tornam o Fogo Baixo um espaço especial para quem ama cozinhar e compartilhar momentos em volta da comida.
+                Aproveite para explorar outros projetos que estamos desenvolvendo, saiba como colaborar com nossas iniciativas e não hesite em entrar em contato conosco.
+                Seu apoio é fundamental para que possamos continuar crescendo e trazendo cada vez mais sabor para a sua vida!
+                    </p>
+                    <p class="text-2xl Gudea w-5/12 brown ml-20 xl:hidden">
+                        Conheça a equipe criadora e os principais contribuidores que tornam este site possível.
+                Aqui, você vai descobrir as pessoas por trás das receitas, ideias e inovações que tornam o Fogo Baixo um espaço especial para quem ama cozinhar e compartilhar momentos em volta da comida.
+                    </p>
+                <div class="grid grid-cols-2 grid-rows-2 gap-0">
+                    <img src="assets/imgs/home_img/grid_1.svg" class="col-start-1 row-start-1" alt="">
+                    <img src="assets/imgs/home_img/grid_2.svg" class="col-start-1 ml-75 row-start-1" alt="">
+                    <img src="assets/imgs/home_img/grid_3.svg" class="col-span-2 row-start-2" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center md:hidden">
+                <p class="text-green-600 font-semibold text-3xl border-l-10 pl-5 border-green-600 Caveat">Conheça a equipe que fez isso aconteçer!</p>
+                <div class="grid grid-cols-2 grid-rows-2 gap-0 ml-10 mt-10">
+                    <img src="assets/imgs/home_img/grid_1.svg" class="col-start-1 row-start-1" alt="">
+                    <img src="assets/imgs/home_img/grid_2.svg" class="col-start-1 ml-75 row-start-1" alt="">
+                    <img src="assets/imgs/home_img/grid_3.svg" class="col-span-2 row-start-2" alt="">
+                </div>
+            </div>
+        </div>
+
+</main>
+  <footer class="bottom-0 left-0 w-full text-white p-4 text-center green-light flex items-center justify-center">
+    <img src="assets/imgs/home_img/7 1.svg" class="w-4/12 md:w-2/12">
+    <p class=" text-xl mt-5 sr-only md:not-sr-only">© 2025 Fogo-Baixo. Todos os direitos reservados.</p>
+    <p class="not-sr-only md:sr-only">todos os direitos reservados</p>
+    <img src="assets/imgs/github_white.svg" class="md:w-1/12 h-7 mt-5 ml-5" alt="">
+  </footer>
+  <!--Modais-->
+
+</body>
+
+</html>
