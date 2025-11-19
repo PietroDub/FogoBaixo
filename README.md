@@ -11,7 +11,7 @@
 <h2>Participantes Diretos:</h2>
 <a href="https://github.com/juninh0-dev">Altair Godoi</a>
 <br>
-<a href="https://github.com/DiegoLopes-da-Silva">Diego Lópes</a>
+<a href="https://github.com/DiegoLopes-da-Silva">Diego Lopes</a>
 <br>
 <a href="https://github.com/betzfer">Miguel Rodriguez</a>
 <br>
