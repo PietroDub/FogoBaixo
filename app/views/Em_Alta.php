@@ -49,19 +49,19 @@
 
 </head>
 <body>
-  <header class="w-full bg-[url('../imgs/header_background.svg')] bg-no-repeat bg-cover bg-center text-green-600 flex flex-col items-center">
+  <header class="w-full bg-[url('../../public/assets/imgs/header_background.svg')] bg-no-repeat bg-cover bg-center text-green-600 flex flex-col items-center">
         <div class="head w-full flex p-5 items-center justify-center space-x-6 ">
         <a href="home.php" class="hidden md:block w-2/12 md:mr-10">
-            <img src="../imgs/home_img/7 1.svg" alt="logo_fogo_baixo" class="w-full">
+            <img src="../../public/assets/imgs/home_img/7 1.svg" alt="logo_fogo_baixo" class="w-full">
         </a>
-        <a href="home.php" class="w-3/12  md:sr-only "><img src="../imgs/home_img/logo_mobile.svg" class="" alt=""></a>
+        <a href="home.php" class="w-3/12  md:sr-only "><img src="../../public/assets/imgs/home_img/logo_mobile.svg" class="" alt=""></a>
 <!--<input type="search" class="bg-white w-4/12 h-10 rounded-full sr-only md:not-sr-only" name="searchHome" id="searchHome"> <!-->
         <input type="search" class="bg-white rounded-full md:w-3/12 md:h-10 hidden md:block" name="" id="">
         <nav class="space-x-6 pl-5 md:flex">
             <a href="login.php" class="border-l-5 pl-1 text-2xl">Log-in</a>
             <a href="cadastro.php" class="border-l-5 pl-1 text-2xl">Cadastro</a>
         </nav>
-        <a href="Perfil.php"><img src="../imgs/home_img/Perfil_Template.svg" alt="" class="w-20"></a>
+        <a href="Perfil.php"><img src="../../public/assets/imgs/home_img/Perfil_Template.svg" alt="" class="w-20"></a>
 
     </div>
     <div class="h-2 w-10/12 flex bg-green-600"></div>
@@ -98,27 +98,27 @@
         </h1>
         </div>
 
-         <section class="bg-[url('../imgs/home_img/bg_card_home.png')] bg-no-repeat bg-cover bg-center hidden md:flex gap-x-10 p-10 items-center justify-center">
+         <section class="bg-[url('../../public/assets/imgs/home_img/bg_card_home.png')] bg-no-repeat bg-cover bg-center hidden md:flex gap-x-10 p-10 items-center justify-center">
             <div class="card1 h-9/10 bg-white w-3/12 flex flex-col justify-center items-center relative p-3">
-                    <img src="../imgs/comida/miojo.png" class="h-9/10 w-12/12" alt="">
+                    <img src="../../public/assets/imgs/comida/miojo.png" class="h-9/10 w-12/12" alt="">
                     <div class="absolute top-6 left-7 bg-white Gudea text-xl gap-x-5 p-4 font-semibold hidden lg:flex ">
-                        <img src="../imgs/Em_Alta/Favorito.svg" alt="">
+                        <img src="../../public/assets/imgs/Em_Alta/Favorito.svg" alt="">
                         <p class="green-dark">pesquisas</p>
                     </div>
                     <p class="p-2 font-semibold text-xl brown">título da receita</p>
             </div>
             <div class="card1 h-9/10 bg-white w-3/12  flex flex-col justify-center items-center relative p-3">
-                    <img src="../imgs/comida/milho.png" class="h-9/10 w-12/12" alt="">
+                    <img src="../../public/assets/imgs/comida/milho.png" class="h-9/10 w-12/12" alt="">
                     <div class="absolute top-6 left-7 bg-white hidden lg:flex Gudea text-xl gap-x-5 p-4 font-semibold">
-                        <img src="../imgs/Em_Alta/Favorito.svg" alt="">
+                        <img src="../../public/assets/imgs/Em_Alta/Favorito.svg" alt="">
                         <p class="green-dark">preferências</p>
                     </div>
                     <p class="p-2 font-semibold text-xl brown">título da receita</p>
             </div>
             <div class="card1 h-9/10 bg-white w-3/12  flex flex-col justify-center items-center relative p-3">
-                    <img src="../imgs/comida/feijoada.png" class="h-9/10 w-12/12" alt="">
+                    <img src="../../public/assets/imgs/comida/feijoada.png" class="h-9/10 w-12/12" alt="">
                     <div class="absolute top-6 left-7 bg-white hidden lg:flex Gudea text-xl gap-x-5 p-4 font-semibold">
-                        <img src="../imgs/Em_Alta/Favorito.svg" alt="">
+                        <img src="../../public/assets/imgs/Em_Alta/Favorito.svg" alt="">
                         <p class="green-dark">Chefes</p>
                     </div>
                     <p class="p-2 font-semibold text-xl brown">título da receita</p>
@@ -132,15 +132,15 @@
     <div class="relative h-56 overflow-hidden rounded-lg h-96 mt-10">
          <!-- Item 1 -->
         <div class="hidden duration-200 ease-linear " data-carousel-item>
-            <img src="../imgs/comida/hamb_vegan.png" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="../../public/assets/imgs/comida/hamb_vegan.png" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-200 ease-linear" data-carousel-item>
-            <img src="../imgs/comida/panq.svg" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="../../public/assets/imgs/comida/panq.svg" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-200 ease-linear" data-carousel-item="active">
-            <img src="../imgs/comida/crepi.svg" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="../../public/assets/imgs/comida/crepi.svg" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
     </div>
     <!-- Slider controls -->
@@ -167,25 +167,25 @@
             <div class="w-full h-24 bg-[#a97b52] flex flex-col md:flex md:flex-row justify-center gap-x-20 mb-60">
                     <!-- Card 1 -->
                     <div class="-translate-y-1/3 w-full xl:w-5/12 flex bg-white h-70 shadow-md">
-                    <img src="../imgs/comida/Hambúrguer.png" class="p-5" alt="">
+                    <img src="../../public/assets/imgs/comida/Hambúrguer.png" class="p-5" alt="">
                     <div class="flex flex-col items-center pt-10 relative">
                         <h1 class="Caveat text-4xl">Título da receita</h1>
                         <p class="pt-5 Gudea font-semibold px-5 brown">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur totam magni, sequi eaque sapiente laboriosam sint dolor omnis iste?
                         </p>
-                        <img src="../imgs/Em_Alta/Favorito.svg" class="absolute bottom-10 right-10 bg-gray-200 p-2 hidden xl:block" alt="">
+                        <img src="../../public/assets/imgs/Em_Alta/Favorito.svg" class="absolute bottom-10 right-10 bg-gray-200 p-2 hidden xl:block" alt="">
                     </div>
                     </div>
 
                      <!-- Card 1 -->
                     <div class="-translate-y-1/3 w-full xl:w-5/12 hidden xl:flex bg-white h-70 shadow-md">
-                    <img src="../imgs/comida/musse_maracuja.png" class="p-5" alt="">
+                    <img src="../../public/assets/imgs/comida/musse_maracuja.png" class="p-5" alt="">
                     <div class="flex flex-col items-center pt-10 relative">
                         <h1 class="Caveat text-4xl">Título da receita</h1>
                         <p class="pt-5 Gudea font-semibold px-5 brown">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur totam magni, sequi eaque sapiente laboriosam sint dolor omnis iste?
                         </p>
-                        <img src="../imgs/Em_Alta/Favorito.svg" class="absolute bottom-10 right-10 bg-gray-200 p-2 hidden xl:block" alt="">
+                        <img src="../../public/assets/imgs/Em_Alta/Favorito.svg" class="absolute bottom-10 right-10 bg-gray-200 p-2 hidden xl:block" alt="">
                     </div>
                     </div>
             </div>
@@ -193,25 +193,25 @@
                         <div class="w-full h-24 bg-[#a97b52] flex flex-col md:flex md:flex-row justify-center gap-x-20 mb-60">
                     <!-- Card 1 -->
                     <div class="-translate-y-1/3 w-full xl:w-5/12 flex bg-white h-70 shadow-md">
-                    <img src="../imgs/comida/bolo.png" class="p-5" alt="">
+                    <img src="../../public/assets/imgs/comida/bolo.png" class="p-5" alt="">
                     <div class="flex flex-col items-center pt-10 relative">
                         <h1 class="Caveat text-4xl">Título da receita</h1>
                         <p class="pt-5 Gudea font-semibold px-5 brown">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur totam magni, sequi eaque sapiente laboriosam sint dolor omnis iste?
                         </p>
-                        <img src="../imgs/Em_Alta/Favorito.svg" class="absolute bottom-10 right-10 bg-gray-200 p-2 hidden xl:block" alt="">
+                        <img src="../../public/assets/imgs/Em_Alta/Favorito.svg" class="absolute bottom-10 right-10 bg-gray-200 p-2 hidden xl:block" alt="">
                     </div>
                     </div>
 
                      <!-- Card 1 -->
                     <div class="-translate-y-1/3 w-full xl:w-5/12 hidden xl:flex bg-white h-70 shadow-md">
-                    <img src="../imgs/comida/coxinha.png" class="p-5" alt="">
+                    <img src="../../public/assets/imgs/comida/coxinha.png" class="p-5" alt="">
                     <div class="flex flex-col items-center pt-10 relative">
                         <h1 class="Caveat text-4xl">Título da receita</h1>
                         <p class="pt-5 Gudea font-semibold px-5 brown">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur totam magni, sequi eaque sapiente laboriosam sint dolor omnis iste?
                         </p>
-                        <img src="../imgs/Em_Alta/Favorito.svg" class="absolute bottom-10 right-10 bg-gray-200 p-2 hidden xl:block" alt="">
+                        <img src="../../public/assets/imgs/Em_Alta/Favorito.svg" class="absolute bottom-10 right-10 bg-gray-200 p-2 hidden xl:block" alt="">
                     </div>
                     </div>
             </div>
@@ -219,25 +219,25 @@
                         <div class="w-full h-24 bg-[#a97b52] flex flex-col md:flex md:flex-row justify-center gap-x-20">
                     <!-- Card 1 -->
                     <div class="-translate-y-1/3 w-full xl:w-5/12 flex bg-white h-70 shadow-md">
-                    <img src="../imgs/comida/rosca.png" class="p-5" alt="">
+                    <img src="../../public/assets/imgs/comida/rosca.png" class="p-5" alt="">
                     <div class="flex flex-col items-center pt-10 relative">
                         <h1 class="Caveat text-4xl">Título da receita</h1>
                         <p class="pt-5 Gudea font-semibold px-5 brown">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur totam magni, sequi eaque sapiente laboriosam sint dolor omnis iste?
                         </p>
-                        <img src="../imgs/Em_Alta/Favorito.svg" class="absolute bottom-10 right-10 bg-gray-200 p-2 hidden xl:block" alt="">
+                        <img src="../../public/assets/imgs/Em_Alta/Favorito.svg" class="absolute bottom-10 right-10 bg-gray-200 p-2 hidden xl:block" alt="">
                     </div>
                     </div>
 
                      <!-- Card 1 -->
                     <div class="-translate-y-1/3 w-full xl:w-5/12 hidden xl:flex bg-white h-70 shadow-md">
-                    <img src="../imgs/comida/nugget.png" class="p-5" alt="">
+                    <img src="../../public/assets/imgs/comida/nugget.png" class="p-5" alt="">
                     <div class="flex flex-col items-center pt-10 relative">
                         <h1 class="Caveat text-4xl">Título da receita</h1>
                         <p class="pt-5 Gudea font-semibold px-5 brown">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur totam magni, sequi eaque sapiente laboriosam sint dolor omnis iste?
                         </p>
-                        <img src="../imgs/Em_Alta/Favorito.svg" class="absolute bottom-10 right-10 bg-gray-200 p-2 hidden xl:block" alt="">
+                        <img src="../../public/assets/imgs/Em_Alta/Favorito.svg" class="absolute bottom-10 right-10 bg-gray-200 p-2 hidden xl:block" alt="">
                     </div>
                     </div>
             </div>
@@ -245,9 +245,9 @@
     </main>
 
     <footer class="bottom-0 left-0 w-full text-white p-4 text-centerd  green-light flex items-center justify-center mt-30">
-    <img src="../imgs/home_img/7 1.svg" class="w-2/12">
+    <img src="../../public/assets/imgs/home_img/7 1.svg" class="w-2/12">
     <p class=" text-xl mt-5">© 2025 Fogo-Baixo. Todos os direitos reservados.</p>
-    <img src="../imgs/github_white.svg" class="w=1/12 h-7 mt-5 ml-5" alt="">
+    <img src="../../public/assets/imgs/github_white.svg" class="w=1/12 h-7 mt-5 ml-5" alt="">
   </footer>
 
   <script>
