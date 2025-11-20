@@ -14,11 +14,13 @@ abstract class BaseController
         // transforms data into variables
         extract($data);
 
-        // includes the file if exists
-        if(file_exists("../app/views/$view.php")){
-            require_once("../app/views/$view.php");
+        // caminho absoluto baseado no diretório deste arquivo (app/controllers)
+        $file = __DIR__ . '/../views/' . $view . '.php';
+
+        if (file_exists($file)) {
+            require $file;
         } else {
-            die("View não encontrada: " . $view);
+            die("View não encontrada: " . $file);
         }
     }
 }

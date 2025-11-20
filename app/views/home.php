@@ -62,7 +62,7 @@
         <input type="search" class="bg-white rounded-full md:w-3/12 sr-only md:not-sr-only md:h-10" name="" id="">
         <nav class="space-x-6 pl-5 md:flex">
             <a href="../app/views/login.php" class="border-l-5 pl-1 text-2xl">Log-in</a>
-            <a href="../app/views/cadastro.php" class="border-l-5 pl-1 text-2xl">Sign-in</a>
+            <a href="index.php?ct=UserController&mt=cadastro_form" class="border-l-5 pl-1 text-2xl">Sign-in</a>
         </nav>
         <a href="Perfil.php"><img src="assets/imgs/home_img/Perfil_Template.svg" alt="" class="w-20"></a> 
     </div>

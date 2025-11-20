@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cadastro - FogoBaixo</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../../public/assets/styles.css">
+  <link rel="stylesheet" href="<?= BASE_URL ?>/assets/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="min-h-screen flex items-center justify-center m-0 p-0 relative overflow-hidden">
 
   <!-- Imagem de fundo (acima do body, abaixo do conteúdo) -->
   <div class="absolute inset-0 z-0 pointer-events-none">
-    <img src="../../public/assets/imgs/triangulo.png" class="absolute bottom-0 right-0 w-1/2" alt="">
+    <img src="<?= BASE_URL ?>/assets/imgs/triangulo.png" class="absolute bottom-0 right-0 w-1/2" alt="">
   </div>
 
   <!-- Conteúdo principal -->
@@ -21,7 +21,7 @@
     <!-- Lado Esquerdo -->
     <div class="w-1/2 p-8 flex flex-col justify-center gap-y-5 background items-center">
       <div class="flex items-center flex-col">
-        <img src="../../public/assets/imgs/home_img/7 1.svg" class="w-3/4" alt="">
+        <img src="<?= BASE_URL ?>/assets/imgs/home_img/7 1.svg" class="w-3/4" alt="">
         <p class="text-xl text-white font-semibold text-center">
           Entre no site, e explore as mais diversas e personalizadas experiências culinárias.
         </p>
@@ -39,22 +39,30 @@
     <div class="w-1/2 p-8 bg-white">
       <h2 class="green-dark font-bold mb-6 text-center text-3xl">Cadastro</h2>
 
-      <form class="space-y-4 flex flex-col">
-        <input type="text" placeholder="Nome" class="w-full p-2 border border-gray-300 rounded" />
-        <input type="email" placeholder="Email" class="w-full p-2 border border-gray-300 rounded" />
-        <input type="password" placeholder="Senha" class="w-full p-2 border border-gray-300 rounded" />
+      <form action="?ct=UserController&mt=cadastro_submit"  method="post" class="space-y-4 flex flex-col">
+        <input type="text" placeholder="Nome" name="nome" id="nome"  class="w-full p-2 border border-gray-300 rounded" />
+        <input type="password" placeholder="Senha" name="senha" id="senha" class="w-full p-2 border border-gray-300 rounded" />
+        <input type="email" placeholder="Email" name="email" id="email" class="w-full p-2 border border-gray-300 rounded" />
 
         <label class="flex items-center space-x-2 text-sm">
           <input type="checkbox" />
           <span class="green-dark font-bold">Aceite os termos aqui</span>
         </label>
-      </form>
 
       <div class="mt-4 text-sm flex flex-col justify-center items-center">
         <button type="submit" class="w-1/2 p-2 border border-gray-300 rounded">Cadastrar</button>
         <p class="text-green-600 font-semibold" href="perca_1.php" >Esqueceu a senha?</p>
         <p class="brown font-bold" href="login.php" >Já possui uma conta, faça login</p>
       </div>
+
+      </form>
+
+
+      <?php if(!empty($validation_errors)): ?>
+        <?php foreach($validation_errors as $error): ?>
+          <div><?= $error ?></div>
+        <?php endforeach; ?>
+      <?php endif; ?>
     </div>
 
   </main>
