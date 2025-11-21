@@ -55,19 +55,19 @@
     </style>
 </head>
 <body class="w-full flex flex-col">
-    <header class="w-full bg-[url('../imgs/header_background.svg')] bg-no-repeat bg-cover bg-center text-green-600 flex flex-col items-center">
+    <header class="w-full bg-[url('../../public/assets/imgs/header_background.svg')] bg-no-repeat bg-cover bg-center text-green-600 flex flex-col items-center">
         <div class="head w-full flex p-5 items-center justify-center space-x-6 ">
         <a href="home.php" class="hidden md:block w-2/12 md:mr-10">
-            <img src="assets/imgs/home_img/7 1.svg" alt="logo_fogo_baixo" class="w-full">
+            <img src="../../public/assets/imgs/home_img/7 1.svg" alt="logo_fogo_baixo" class="w-full">
         </a>
-        <a href="home.php" class="w-3/12  md:sr-only "><img src="../imgs/home_img/logo_mobile.svg" class="" alt=""></a>
+        <a href="home.php" class="w-3/12  md:sr-only "><img src="../../public/assets/imgs/home_img/logo_mobile.svg" class="" alt=""></a>
 <!--<input type="search" class="bg-white w-4/12 h-10 rounded-full sr-only md:not-sr-only" name="searchHome" id="searchHome"> <!-->
         <input type="search" class="bg-white rounded-full md:w-3/12 md:h-10 hidden md:block" name="" id="">
         <nav class="space-x-6 pl-5 md:flex">
             <a href="login.php" class="border-l-5 pl-1 text-2xl">Log-in</a>
             <a href="" class="border-l-5 pl-1 text-2xl">Sign-in</a>
         </nav>
-        <a href="Perfil.php"><img src="../imgs/home_img/Perfil_Template.svg" alt="" class="w-20"></a>
+        <a href="Perfil.php"><img src="../../public/assets/imgs/home_img/Perfil_Template.svg" alt="" class="w-20"></a>
 
     </div>
     <div class="h-2 w-10/12 flex bg-green-600"></div>
@@ -89,7 +89,7 @@
    <section class="w-full flex flex-col justify-center items-center mb-20">
     <div class="w-10/12 card-criador border-6 flex flex-col md:flex md:flex-row items-center justify-center gap-x-10 p-5 mt-10">
       <div>
-        <img src="../imgs/Pietro_profile.jfif" class="rounded-full" alt="">
+        <img src="../../public/assets/imgs/Pietro_profile.jfif" class="rounded-full" alt="">
       </div>
       <div class="w-10/12 md:w-7/12">
         <h1 class="Caveat text-5xl green-dark hidden md:block">Pietro Vito</h1>
@@ -144,16 +144,16 @@
                     </div>
         </div>
                 <div>
-                  <img src="../imgs/miguel.jpg" class="rounded-full" alt="">
+                  <img src="../../public/assets/imgs/miguel.jpg" class="rounded-full" alt="">
                 </div>
    </div>
    </section>
    
    <footer class="bottom-0 left-0 w-full text-white p-4 text-center green-light flex items-center justify-center">
-    <img src="../imgs/home_img/7 1.svg" class="w-4/12 md:w-2/12">
+    <img src="../../public/assets/imgs/home_img/7 1.svg" class="w-4/12 md:w-2/12">
     <p class=" text-xl mt-5 ">© 2025 Fogo-Baixo. Todos os direitos reservados.</p>
     <p class="sr-only">todos os direitos reservados</p>
-    <img src="../imgs/github_white.svg" class="md:w-1/12 h-7 mt-5 ml-5" alt="">
+    <img src="../../public/assets/imgs/github_white.svg" class="md:w-1/12 h-7 mt-5 ml-5" alt="">
   </footer>
 </body>
 </html>
