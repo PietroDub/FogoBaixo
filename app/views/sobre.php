@@ -58,7 +58,7 @@
     <header class="w-full bg-[url('../imgs/header_background.svg')] bg-no-repeat bg-cover bg-center text-green-600 flex flex-col items-center">
         <div class="head w-full flex p-5 items-center justify-center space-x-6 ">
         <a href="home.php" class="hidden md:block w-2/12 md:mr-10">
-            <img src="../imgs/home_img/7 1.svg" alt="logo_fogo_baixo" class="w-full">
+            <img src="assets/imgs/home_img/7 1.svg" alt="logo_fogo_baixo" class="w-full">
         </a>
         <a href="home.php" class="w-3/12  md:sr-only "><img src="../imgs/home_img/logo_mobile.svg" class="" alt=""></a>
 <!--<input type="search" class="bg-white w-4/12 h-10 rounded-full sr-only md:not-sr-only" name="searchHome" id="searchHome"> <!-->
