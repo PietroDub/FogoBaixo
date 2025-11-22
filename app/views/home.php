@@ -61,8 +61,12 @@
 <!--<input type="search" class="bg-white w-4/12 h-10 rounded-full sr-only md:not-sr-only" name="searchHome" id="searchHome"> <!-->
         <input type="search" class="bg-white rounded-full md:w-3/12 sr-only md:not-sr-only md:h-10" name="" id="">
         <nav class="space-x-6 pl-5 md:flex">
-            <a href="../app/views/login.php" class="border-l-5 pl-1 text-2xl">Log-in</a>
-            <a href="index.php?ct=UserController&mt=cadastro_form" class="border-l-5 pl-1 text-2xl">Sign-in</a>
+            <?php if (empty($_SESSION['user'])): ?>
+                <a href="?ct=UserController&mt=login_form" class="border-l-5 pl-1 text-2xl">Login</a>
+                <a href="?ct=UserController&mt=cadastro_form" class="border-l-5 pl-1 text-2xl">Cadastre-se</a>
+            <?php else: ?>
+                <a href="?ct=UserController&mt=logout" class="text-2xl">Logout</a>
+            <?php endif; ?>
         </nav>
         <a href="Perfil.php"><img src="assets/imgs/home_img/Perfil_Template.svg" alt="" class="w-20"></a> 
     </div>

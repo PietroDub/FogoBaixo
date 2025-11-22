@@ -94,51 +94,59 @@ class UserController extends BaseController
             unset($_SESSION['validation_errors']);
         }
 
-
         $this->view('login',  $data); 
     } 
 
-    public function login_submit(){
-        //ver se já está logado
-        if(check_Session()){
-            $this->view('home');
-            return;
-        }
+    public function login_submit()
+{
+    // garantir sessão iniciada (deveria estar no bootstrap)
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
 
-        //ver se há um post
-        if($_SERVER['REQUEST_METHOD' != 'POST']){
-            $this->view('home');
-            return;
-        }
+    // já logado -> redireciona para home limpa
+    if (check_Session()) {
+        header("Location: " . BASE_URL . "?ct=Main&mt=home");
+        exit;
+    }
 
-        $validation_errors=[];
-        //ver se ambos foram preenchidos
-        if(empty($_POST['email']) || empty($_POST['senha'])){
-            $validation_errors[] = "Senha e email Obrigatórios!";
-        }
+    // só aceita POST
+    if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+        header("Location: " . BASE_URL . "?ct=UserController&mt=login_form");
+        exit;
+    }
 
-        //ver se há erros de validação:
-        if(!empty($validation_errors)){
-            $_SESSION['validation_errors'] = $validation_errors;
-            header("Location: " . BASE_URL . "?ct=Main&mt=home");
-            exit;
-        }
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
+    // validação simples
+    $validation_errors = [];
+    $email = trim($_POST['email'] ?? '');
+    $senha = $_POST['senha'] ?? '';
 
-        $user = new Users();
-        $result = $user->check_login($email, $senha);
-        
-        if($result['status']){
-        // LOGIN OK → cria sessão
+    if ($email === '' || $senha === '') {
+        $validation_errors[] = "Senha e email Obrigatórios!";
+    }
+
+    // se erro de validação -> salvar e redirecionar para o formulário (PRG)
+    if (!empty($validation_errors)) {
+        $_SESSION['validation_errors'] = $validation_errors;
+        header("Location: " . BASE_URL . "?ct=UserController&mt=login_form");
+        exit;
+    }
+
+    // chama o model para verificar credenciais
+    $userModel = new Users(); 
+    $result = $userModel->check_login($email, $senha);
+
+    if ($result['status']) {
+        // login ok: salva dados essenciais na sessão e redireciona para a home limpa
         $_SESSION['user'] = $result['user'];
         header("Location: " . BASE_URL . "?ct=Main&mt=home");
         exit;
-        } else {
-        // LOGIN FALHOU → voltar ao form
-        $_SESSION['validation_errors'] = ['Email ou senha incorretos'];
-        $this->login_form();
-        }
+    } else {
+        // login falhou: coloca a mensagem 
+        $_SESSION['validation_errors'] = [$result['message'] ?? 'Email ou senha incorretos'];
+        header("Location: " . BASE_URL . "?ct=UserController&mt=login_form");
+        exit;
     }
+}
 }
 ?>
