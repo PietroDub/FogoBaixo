@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="<?= BASE_URL ?>/assets/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="min-h-screen flex items-center justify-center m-0 p-0 relative overflow-hidden">
+<body class="min-h-screen  flex flex-col items-center justify-center m-0 p-0 relative overflow-hidden">
 
   <!-- Imagem de fundo (acima do body, abaixo do conteúdo) -->
-  <div class="absolute inset-0 z-0 pointer-events-none">
+  <div class="absolute inset-0 z-1 pointer-events-none">
     <img src="<?= BASE_URL ?>/assets/imgs/triangulo.png" class="absolute bottom-0 right-0 w-1/2" alt="">
   </div>
 
@@ -45,7 +45,7 @@
         <input type="email" placeholder="Email" name="email" id="email" class="w-full p-2 border border-gray-300 rounded" />
 
         <label class="flex items-center space-x-2 text-sm">
-          <input type="checkbox" />
+          <input type="checkbox" name="termos" value="1"/>
           <span class="green-dark font-bold">Aceite os termos aqui</span>
         </label>
 
@@ -56,16 +56,14 @@
       </div>
 
       </form>
-
-
-      <?php if(!empty($validation_errors)): ?>
-        <?php foreach($validation_errors as $error): ?>
-          <div><?= $error ?></div>
-        <?php endforeach; ?>
-      <?php endif; ?>
     </div>
-
+    
   </main>
+  <?php if(!empty($validation_errors)): ?>
+    <?php foreach($validation_errors as $error): ?>
+      <div class="text-red-600 bg-red-200 p-5 m-1 z-0 rounded-lg"><?= $error ?></div>
+    <?php endforeach; ?>
+  <?php endif; ?>
 
 </body>
 </html>

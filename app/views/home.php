@@ -55,9 +55,9 @@
  <header class="w-full min-h-screen bg-[url('assets/imgs/home_img/bg_header.svg')] bg-no-repeat bg-cover bg-center text-green-600 flex flex-col items-center">
     <div class="head w-full flex p-5 items-center justify-center space-x-6">
         <a href="../app/views/home.php" class="hidden md:block w-2/12 md:mr-10">
-            <img src="assets/imgs/home_img/7 1.svg" alt="logo_fogo_baixo" class="w-full">
+            <img src="<?= BASE_URL ?>/assets/imgs/home_img/7 1.svg" alt="logo_fogo_baixo" class="w-full">
         </a>
-        <img src="assets/imgs/home_img/logo_mobile.svg" class="w-3/12 md:sr-only " alt="">
+        <img src="<?= BASE_URL ?>/assets/imgs/home_img/logo_mobile.svg" class="w-3/12 md:sr-only " alt="">
 <!--<input type="search" class="bg-white w-4/12 h-10 rounded-full sr-only md:not-sr-only" name="searchHome" id="searchHome"> <!-->
         <input type="search" class="bg-white rounded-full md:w-3/12 sr-only md:not-sr-only md:h-10" name="" id="">
         <nav class="space-x-6 pl-5 md:flex">
@@ -103,7 +103,7 @@
         <div class="cards bg-[url('assets/imgs/home_img/bg_card_home.png')] bg-no-repeat bg-cover bg-center md:h-100 gap-x-10 flex items-center justify-center sr-only md:not-sr-only">
             <div class="card1 flex flex-col items-center">
            <a href="../app/views/receitas/macarrao.php">
-                 <img src="assets/imgs/home_img/Massas_template.svg" class="">
+                 <img src="<?= BASE_URL ?>/assets/imgs/home_img/Massas_template.svg" class="">
                 <p class="font-semibold">Macarrão muito bem temperado e com tomate</p>
                 <div class="array flx">
                     <img src="" alt="">
@@ -116,7 +116,7 @@
 
             <a href="../app/views/receitas/hambúrguer.php">
                 <div class="card2 flex flex-col items-center">
-                <img src="assets/imgs/home_img/hamb_home.svg" class="border-green-600 border-6 rounded-xl" alt="">
+                <img src="<?= BASE_URL ?>/assets/imgs/home_img/hamb_home.svg" class="border-green-600 border-6 rounded-xl" alt="">
                 <p class="font-semibold">Hambúrguer caseiro e saúdavél! Super simples!</p>
                 <div class="array flx">
                     <img src="" alt="">
@@ -128,7 +128,7 @@
             </a>
 
             <div class="card3">
-                <img src="assets/imgs/home_img/panq_home.svg" class="border-green-600 border-6 rounded-xl" alt="">
+                <img src="<?= BASE_URL ?>/assets/imgs/home_img/panq_home.svg" class="border-green-600 border-6 rounded-xl" alt="">
                 <p class="font-semibold">Panqueca americana doce para café da manhã!</p>
                 <div class="array flx">
                     <img src="" alt="">
@@ -143,7 +143,7 @@
              <a href="../app/views/receitas/macarrao.php">
                 <div class="card3 bg-white flex-col p-5 mt-5 rounded-xl">
             <div class="flex">
-                <img src="assets/imgs/home_img/Massas_template.svg" alt="">
+                <img src="<?= BASE_URL ?>/assets/imgs/home_img/Massas_template.svg" alt="">
                 <div class="array flex justify-between flex-col w-full items-center py-4">
                     <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">
                     <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">
@@ -157,7 +157,7 @@
 
              <div class="card3 bg-white flex-col p-5 mt-5 rounded-xl">
             <div class="flex">
-                <img src="assets/imgs/home_img/panq_home.svg" alt="">
+                <img src="<?= BASE_URL ?>/assets/imgs/home_img/panq_home.svg" alt="">
                 <div class="array flex justify-between flex-col w-full items-center py-6">
                     <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">
                     <img src="assets/imgs/home_img/badge.svg" class="w-15" alt="">

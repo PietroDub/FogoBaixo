@@ -16,7 +16,7 @@ class Users extends BaseModel
     public $deletado_em;
 
     public function __construct($nome = null, $senha = null, $email = null, $id_usuario = null, $criado_em = null, $alterado_em = null, $deletado_em = null)
-    {   error_log("Users::__construct -> nome: {$nome}, senha: {$senha}, email: {$email}");
+    {   
         $this->id_usuario = $id_usuario;
         $this->nome       = $nome;
         $this->senha      = $senha;
@@ -70,5 +70,45 @@ class Users extends BaseModel
 
             return ['status' => 'error', 'mensagem' => 'Erro ao inserir usuário'];
         }
+    }
+
+    public function check_login($email, $password){
+
+        //ver se o login é valido
+        $params = [
+            ':email' => $email
+        ];
+
+        //ver se esta na base de dados
+        $this->db_connect();
+        $resultados = $this->query(
+            "SELECT id_usuario, nome, email, senha FROM usuarios WHERE email = :email",$params
+        );
+
+        if($resultados->affected_rows == 0){
+            return[
+                'status' => false,
+                'message' => 'Usuário não encontrado'
+            ];
+        }
+
+        $userRow = $resultados->results[0];
+        //verificar a senha
+        if(!password_verify($password, $userRow->senha)){
+            //login esta ok!
+            return [
+                'status' => false,
+                'message' => 'senha incorreta'
+            ];
+        }
+
+        return [
+        'status' => true,
+        'user' => [
+            'id_usuario' => $userRow->id_usuario,
+            'nome'       => $userRow->nome,
+            'email'      => $userRow->email
+          ]
+        ];
     }
 }

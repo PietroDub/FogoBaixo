@@ -10,17 +10,17 @@ abstract class BaseModel
 
     public function db_connect()
     {
-        $options = [
-            'host' => MYSQL_HOST,
-            'database' => MYSQL_DATABASE,
-            'username' => MYSQL_USERNAME,
-            'password' => MYSQL_PASSWORD
-        ];
+        if (!defined('MYSQL_CONFIG')) {
+            throw new \RuntimeException("MYSQL_CONFIG não está definida.");
+        }
+
+        // lembrar de usar \ pois estamos dentro de um namespace
+        $options = \MYSQL_CONFIG;
         $this->db = new Database($options);
     }
 
     public function query($sql = "", $params = [])
     {
-        return $this->db->execute_query($sql);
+        return $this->db->execute_query($sql, $params);
     }
 }

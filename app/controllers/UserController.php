@@ -10,7 +10,7 @@ class UserController extends BaseController
     public function cadastro_form(){
         //ver se já está logado
         if(check_Session()){
-            $this->view('login');
+            $this->login_form();
             return;
         }
 
@@ -38,6 +38,14 @@ class UserController extends BaseController
         if(empty($_POST['senha'])){
             $validation_errors[] = "Senha Obrigatória!";
         }
+        if(strlen($_POST['senha']) < 8){
+            $validation_errors[] = "Senha tem que ter mais de 8 dígitos!";
+        }
+
+        if (isset($_POST['termos'])) {
+        } else {
+            $validation_errors[] = "Aceite os termos!";
+        }
 
          //ver se há erros
         if(!empty($validation_errors)){
@@ -45,7 +53,7 @@ class UserController extends BaseController
             $this->cadastro_form();
             return;
         }
-
+        
         //...a continuar
         $nome = trim($_POST['nome']);
         $senha = trim($_POST['senha']);
@@ -54,25 +62,83 @@ class UserController extends BaseController
         // 🔒 Nunca salve a senha sem hash!
         $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
 
-        error_log("CTRL before new Users -> nome: {$nome}, email: {$email}, senha_plain: {$senha}");
         $user = new Users($nome, $senha_hash, $email);
         $saveResult = $user->save();
-
-        //método que insere no banco
-        if (is_array($saveResult) && $saveResult['status'] === 'success') {
-        // Redireciona para página de login
-        $this->view('login'); 
-        return;
-        }
 
         if (is_array($saveResult) && $saveResult['status'] === 'exists') {
             $_SESSION['validation_errors'] = ['Já existe usuário com esse email'];
         } else {
             $_SESSION['validation_errors'] = ['Erro ao cadastrar usuário'];
         }
-
-        $this->cadastro_form();
         
+        //método que insere no banco
+        if (is_array($saveResult) && $saveResult['status'] === 'success') {
+        // Redireciona para página de login
+        header('Location: ' . BASE_URL . '/index.php?ct=UserController&mt=login_form');
+        return;
+        }
+
+    }
+
+    public function login_form(){
+        //ver se já está logado
+        if(check_Session()){
+            $this->view('home');
+            return;
+        }
+
+         //checar se há erros 
+         $data = [];
+         if(!empty($_SESSION['validation_errors'])){
+            $data['validation_errors'] = $_SESSION['validation_errors'];
+            unset($_SESSION['validation_errors']);
+        }
+
+
+        $this->view('login',  $data); 
+    } 
+
+    public function login_submit(){
+        //ver se já está logado
+        if(check_Session()){
+            $this->view('home');
+            return;
+        }
+
+        //ver se há um post
+        if($_SERVER['REQUEST_METHOD' != 'POST']){
+            $this->view('home');
+            return;
+        }
+
+        $validation_errors=[];
+        //ver se ambos foram preenchidos
+        if(empty($_POST['email']) || empty($_POST['senha'])){
+            $validation_errors[] = "Senha e email Obrigatórios!";
+        }
+
+        //ver se há erros de validação:
+        if(!empty($validation_errors)){
+            $_SESSION['validation_errors'] = $validation_errors;
+            header("Location: " . BASE_URL . "?ct=Main&mt=home");
+            exit;
+        }
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+
+        $user = new Users();
+        $result = $user->check_login($email, $senha);
+        
+        if($result['status']){
+        // LOGIN OK → cria sessão
+        $_SESSION['user'] = $result['user'];
+        header("Location: " . BASE_URL . "?ct=Main&mt=home");
+        exit;
+        } else {
+        // LOGIN FALHOU → voltar ao form
+        $_SESSION['validation_errors'] = ['Email ou senha incorretos'];
+        $this->login_form();
+        }
     }
 }
 ?>
