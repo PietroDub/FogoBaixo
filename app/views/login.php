@@ -14,7 +14,7 @@
 </head>
 <body class="background flex">
     <div class="div w-screen md:w-2/3 h-screen flex items-center justify-center div">
-        <form action="?ct=UserController&mt=login_submit" method="POST" class="container p6 rounded-xl shadow-lg h-4/6 w-3/4 md:w-2/4 flex flex-col p-5">
+        <form action="?ct=UserController&mt=login_submit" method="POST" class="container p6 rounded-xl shadow-lg h-4/6 w-3/4 md:w-3/4 flex flex-col p-5">
             <h1 class="titulo text-center text-3xl">Login</h1>
             <h2 class="textologin text-center mt-5"> Entre no site, e explore as mais diversas e personalizadas experiencias culinárias.</h2>
        
