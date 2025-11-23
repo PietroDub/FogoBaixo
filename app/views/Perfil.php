@@ -6,7 +6,7 @@
   <title>Perfil - Fogo Baixo</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="<?= BASE_URL ?>/assets/styles.css">
 
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,21 +32,32 @@
 <body class="w-screen h-screen">
 
   <div class="hidden md:flex w-full h-full items-center justify-center relative">
-    <img src="../imgs/fundo_marrom.svg" class="w-2/6 absolute top-0 left-0" alt=""> <!-- Imagem marrom de fundo -->
+    <img src="<?= BASE_URL ?>/assets/imgs/fundo_marrom.svg" class="w-2/6 absolute top-0 left-0" alt=""> <!-- Imagem marrom de fundo -->
 
-    <main class="z-10 w-3/6 bg-[url('../imgs/perfil/fundo_p.svg')] h-full bg-no-repeat bg-cover bg-center relative">
+    <main class="z-10 w-3/6 bg-[url('<?= BASE_URL ?>/assets/imgs/perfil/fundo_p.svg')] h-full bg-no-repeat bg-cover bg-center relative">
       <div class="flex items-center justify-center mt-10 gap-x-10">
-        <img src="../imgs/perfil/Perfil.svg" alt="">
-        <div class="background flex p-5 text-white gap-x-10 text-xl">
-          <p>@NomeDeUsuario</p>
-          <p>emaildousuario@gmail.com</p>
+        <img class="w-1/3 xl:w-1/5" src="<?= BASE_URL ?>/assets/imgs/perfil/<?= $_SESSION['user']['foto'] ?>" alt="">
+
+        <?php  ?>
+        <form action="?ct=PerfilController&mt=Image_submit" method="post" enctype="multipart/form-data">
+          <label>Selecione a imagem</label>
+          <input type="file" name="imagem" accept="image/*" class="form-control" />
+          <button type="submit" class="btn btn-success">
+              Enviar imagem
+        </button>
+        </form>
+        <?php  ?>
+
+        <div class="background p-5 text-white gap-x-10 text-md lg:text-xl">
+          <p><?= $_SESSION['user']['nome'] ?></p>
+          <p><?= $_SESSION['user']['email'] ?></p>
         </div>
       </div>
       <div class="ml-20">
         <h1 class="Caveat border-l-8 border-green-500 green-dark text-5xl pl-4">Receitas Postadas</h1>
       </div>
       <section class="h-2/6 flex items-center justify-center relative">
-        <div class="bg-[url('../imgs/perfil/bolo.svg')] bg-no-repeat bg-cover bg-center w-5/6 h-4/5 mt-5 absolute top-0">
+        <div class="bg-[url('<?= BASE_URL ?>/assets/imgs/perfil/bolo.svg')] bg-no-repeat bg-cover bg-center w-5/6 h-4/5 mt-5 absolute top-0">
           <div class="absolute green-light w-1/4 right-4 top-4 flex items-center justify-center">
             <p class="text-center p-3 font-semibold">Bolo de cenoura com cobertura de chocolate</p>
           </div>
@@ -61,18 +72,18 @@
       </div>
       <section class="h-1/5">
         <div class="h-full flex items-center justify-center p-5 gap-x-5 mt-5">
-          <img src="../imgs/perfil/Group 31.png" class="w-1/5" alt="">
-          <img src="../imgs/perfil/Group 32.png" class="w-1/5" alt="">
-          <img src="../imgs/perfil/Group 33.png" class="w-1/5" alt="">
+          <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 31.png" class="w-1/5" alt="">
+          <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 32.png" class="w-1/5" alt="">
+          <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 33.png" class="w-1/5" alt="">
         </div>
       </section>
     </main>
-    <img src="../imgs/triangulo.png" class="w-2/6 absolute bottom-0 right-0" alt="">
+    <img src="<?= BASE_URL ?>/assets/imgs/triangulo.png" class="w-2/6 absolute bottom-0 right-0" alt="">
   </div>
 
   <!-- MOBILE -->
   <div class="flex flex-col items-center justify-center md:hidden w-full h-full bg-gray-100">
-    <img src="../imgs/perfil/Perfil.svg" class="w-1/3 h-1/4" alt="">
+    <img src="<?= BASE_URL ?>/assets/imgs/perfil/Perfil.svg" class="w-1/3 h-1/4" alt="">
     <div>
          <p class="font-semibold brown text-xl">@NomeDeUsuario</p>
           <p class="font-semibold brown text-xl">emaildousuario@gmail.com</p>
@@ -86,15 +97,15 @@
     <div class="relative h-56 overflow-hidden rounded-lg h-96 mt-10">
          <!-- Item 1 -->
         <div class="hidden duration-200 ease-linear " data-carousel-item>
-            <img src="../imgs/perfil/Group 31.png" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 31.png" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-200 ease-linear" data-carousel-item>
-            <img src="../imgs/perfil/Group 32.png" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 32.png" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-200 ease-linear" data-carousel-item="active">
-            <img src="../imgs/perfil/Group 33.png" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 33.png" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
     </div>
     <!-- Slider controls -->

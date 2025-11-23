@@ -107,8 +107,21 @@ class Users extends BaseModel
         'user' => [
             'id_usuario' => $userRow->id_usuario,
             'nome'       => $userRow->nome,
-            'email'      => $userRow->email
+            'email'      => $userRow->email,
+            'foto'       => $dados->foto ?? null
           ]
         ];
+    }
+
+    public function getById($id){
+        $this->db_connect();
+        $params = ['id' => $id];
+
+        $resultado = $this->query(
+            "SELECT id_usuario, nome, email, foto FROM usuarios WHERE id_usuario = :id",
+            $params
+        );
+
+        return $resultado->results[0] ?? null;
     }
 }

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="background flex">
-    <div class="div w-screen md:w-1/2 h-screen flex items-center justify-center div">
+    <div class="div w-screen md:w-2/3 h-screen flex items-center justify-center div">
         <form action="?ct=UserController&mt=login_submit" method="POST" class="container p6 rounded-xl shadow-lg h-4/6 w-3/4 md:w-2/4 flex flex-col p-5">
             <h1 class="titulo text-center text-3xl">Login</h1>
             <h2 class="textologin text-center mt-5"> Entre no site, e explore as mais diversas e personalizadas experiencias culinárias.</h2>

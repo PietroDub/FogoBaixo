@@ -68,7 +68,9 @@
                 <a href="?ct=UserController&mt=logout" class="text-2xl">Logout</a>
             <?php endif; ?>
         </nav>
-        <a href="Perfil.php"><img src="assets/imgs/home_img/Perfil_Template.svg" alt="" class="w-20"></a> 
+        <?php if (!empty($_SESSION['user'])): ?>
+            <a href="?ct=PerfilController&mt=perfil"><img src="assets/imgs/home_img/Perfil_Template.svg" alt="" class="w-20"></a> 
+        <?php endif; ?>
     </div>
     <div class="h-2 bg-black w-10/12 flex bg-green-600"></div>
     <nav class="text-white flex gap-x-10 my-5 IBM">

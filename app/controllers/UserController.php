@@ -106,7 +106,7 @@ class UserController extends BaseController
 
     // já logado -> redireciona para home limpa
     if (check_Session()) {
-        header("Location: " . BASE_URL . "?ct=Main&mt=home");
+        header("Location: " . BASE_URL . "?ct=Main&mt=index");
         exit;
     }
 
@@ -139,7 +139,7 @@ class UserController extends BaseController
     if ($result['status']) {
         // login ok: salva dados essenciais na sessão e redireciona para a home limpa
         $_SESSION['user'] = $result['user'];
-        header("Location: " . BASE_URL . "?ct=Main&mt=home");
+        header("Location: " . BASE_URL . "?ct=Main&mt=index");
         exit;
     } else {
         // login falhou: coloca a mensagem 
@@ -148,5 +148,7 @@ class UserController extends BaseController
         exit;
     }
 }
+
+
 }
 ?>
