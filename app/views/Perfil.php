@@ -36,17 +36,17 @@
 
     <main class="z-10 w-3/6 bg-[url('<?= BASE_URL ?>/assets/imgs/perfil/fundo_p.svg')] h-full bg-no-repeat bg-cover bg-center relative">
       <div class="flex items-center justify-center mt-10 gap-x-10">
-        <img class="w-1/3 xl:w-1/5" src="<?= BASE_URL ?>/assets/imgs/perfil/<?= $_SESSION['user']['foto'] ?>" alt="">
-
-        <?php  ?>
+        
+        <?php  if(!isset( $_SESSION['user']['foto'])): ?>
         <form action="?ct=PerfilController&mt=Image_submit" method="post" enctype="multipart/form-data">
-          <label>Selecione a imagem</label>
           <input type="file" name="imagem" accept="image/*" class="form-control" />
-          <button type="submit" class="btn btn-success">
+          <button type="submit" class="btn Caveat border-l-8 border-green-500 green-dark pl-2">
               Enviar imagem
-        </button>
+          </button>
         </form>
-        <?php  ?>
+        <?php else: ?>
+          <img class="w-1/3 xl:w-1/5" src="<?= BASE_URL ?>/uploads/<?= $_SESSION['user']['foto'] ?>" alt="">
+        <?php endif; ?>
 
         <div class="background p-5 text-white gap-x-10 text-md lg:text-xl">
           <p><?= $_SESSION['user']['nome'] ?></p>
@@ -58,11 +58,11 @@
       </div>
       <section class="h-2/6 flex items-center justify-center relative">
         <div class="bg-[url('<?= BASE_URL ?>/assets/imgs/perfil/bolo.svg')] bg-no-repeat bg-cover bg-center w-5/6 h-4/5 mt-5 absolute top-0">
-          <div class="absolute green-light w-1/4 right-4 top-4 flex items-center justify-center">
+          <div class="absolute green-light w-2/4 right-4 top-4 flex items-center justify-center">
             <p class="text-center p-3 font-semibold">Bolo de cenoura com cobertura de chocolate</p>
           </div>
           <div class="absolute green-light w-1/4 right-4 top-20 mt-10 flex justify-center items-center gap-x-5 p-2">
-            <p class="text-center font-semibold">Postado a 1h</p>
+            <p class="text-center font-semibold w-2/4">Postado a 1h</p>
             <i class="fa-regular fa-clock text-xl"></i>
           </div>
         </div>

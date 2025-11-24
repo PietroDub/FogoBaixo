@@ -164,4 +164,13 @@ class UserController extends BaseController
             exit;
         }
     }
+
+    public function logout() {
+        session_start();
+        session_unset();
+        session_destroy();
+        header("Location: ?ct=Main&mt=index");
+        exit;
+    }
+
 }

@@ -26,16 +26,20 @@ class PerfilController extends BaseController
     }
 
     public function image_submit(){
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+
         if (!check_Session()) {
             header("Location: " . BASE_URL . "?ct=UserController&mt=login_form");
             exit;
         }
 
-        if (!empty($_FILES['fotos']['name'])){
-            $nomeArquivo = uniqid() . "_" . $_FILES['foto']['name'];
-            $caminho = "uploads/perfil/" . $nomeArquivo;
+        if (!empty($_FILES['imagem']['name'])){
+            $nomeArquivo = uniqid() . "_" . $_FILES['imagem']['name'];
+            $caminho = "uploads/" . $nomeArquivo;
 
-            move_uploaded_file($_FILES['foto']['tmp_name'], $caminho);
+            move_uploaded_file($_FILES['imagem']['tmp_name'], $caminho);
 
             //atualiza no banco
             $user = new Users();
