@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="background flex">
-    <div class="div w-screen md:w-2/3 h-screen flex items-center justify-center div">
+    <div class="div w-screen w-full lg:w-1/2 h-screen flex items-center justify-center div">
         <form action="?ct=UserController&mt=login_submit" method="POST" class="container p6 rounded-xl shadow-lg h-4/6 w-3/4 md:w-3/4 flex flex-col p-5">
             <h1 class="titulo text-center text-3xl">Login</h1>
             <h2 class="textologin text-center mt-5"> Entre no site, e explore as mais diversas e personalizadas experiencias culinárias.</h2>
@@ -42,8 +42,8 @@
                 <button type="submit" class="border p-3 w-2/4 green-light text-white font-semibold">
                     ENTRAR
                 </button>   
-                <a href="../app/views/perca_1.php" class="mb-5 font-semibold green-color">esqueceu a senha?</a>
-                <a href="../app/views/cadastro.php" class="brown font-semibold text-xl">Não tem conta? Cadastre-se</a>
+                <a href="?ct=UserController&mt=esqueceu_senha" class="mb-5 font-semibold green-color">esqueceu a senha?</a>
+                <a href="?ct=UserController&mt=cadastro_form" class="brown font-semibold text-xl">Não tem conta? Cadastre-se</a>
             </div>
         </form>
         
@@ -53,7 +53,7 @@
         
     </div>
 
-    <div class="w-1/2 h-screen hidden md:block">     
+    <div class="w-1/2 h-screen hidden lg:block">     
     <div class="flex flex-col h-2/3 justify-center items-center gap-y-5">
         <img src="<?= BASE_URL ?>assets/imgs/home_img/7 1.svg" class="w-2/4" alt="">
         <p class="text-2xl font-semibold Gudea text-white w-2/4">Deu Branco? Pode logar no site com contas de outras redes.</p>

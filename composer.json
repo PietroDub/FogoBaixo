@@ -8,7 +8,9 @@
             "email": "joaoribeiro@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "phpmailer/phpmailer": "^7.0"
+    },
     "autoload": {
         "psr-4": {
             "bng\\Controllers\\":["app/controllers"],

@@ -19,7 +19,7 @@
   <main class="w-full max-w-4xl flex shadow-md relative flex-col md:flex md:flex-row ">
 
     <!-- Lado Esquerdo -->
-    <div class="w-1/2 p-8 flex flex-col justify-center gap-y-5 background items-center">
+    <div class="hidden md:flex w-1/2 p-8 flex-col justify-center gap-y-5 background items-center">
       <div class="flex items-center flex-col">
         <img src="<?= BASE_URL ?>/assets/imgs/home_img/7 1.svg" class="w-3/4" alt="">
         <p class="text-xl text-white font-semibold text-center">
@@ -36,7 +36,7 @@
     </div>
 
     <!-- Lado Direito (Formulário) -->
-    <div class="w-1/2 p-8 bg-white">
+    <div class="w-full md:w-1/2 p-8 bg-white text-center">
       <h2 class="green-dark font-bold mb-6 text-center text-3xl">Cadastro</h2>
 
       <form action="?ct=UserController&mt=cadastro_submit"  method="post" class="space-y-4 flex flex-col">
@@ -51,8 +51,8 @@
 
       <div class="mt-4 text-sm flex flex-col justify-center items-center">
         <button type="submit" class="w-1/2 p-2 border border-gray-300 rounded">Cadastrar</button>
-        <p class="text-green-600 font-semibold" href="perca_1.php" >Esqueceu a senha?</p>
-        <p class="brown font-bold" href="login.php" >Já possui uma conta, faça login</p>
+        <a class="text-green-600 font-semibold" href="?ct=UserController&mt=esqueceu_senha" >Esqueceu a senha?</a>
+        <a class="brown font-bold" href="?ct=UserController&mt=login_form" >Já possui uma conta, faça login</a>
       </div>
 
       </form>

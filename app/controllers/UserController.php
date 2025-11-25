@@ -5,6 +5,9 @@ namespace bng\Controllers;
 use bng\Models\Agents;
 use bng\Controllers\BaseController as BaseController;
 use bng\Models\Users;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use bng\System\Mailer;
 
 class UserController extends BaseController
 {
@@ -165,7 +168,8 @@ class UserController extends BaseController
         }
     }
 
-    public function logout() {
+    public function logout()
+    {
         session_start();
         session_unset();
         session_destroy();
@@ -173,4 +177,30 @@ class UserController extends BaseController
         exit;
     }
 
+    public function esqueceu_senha()
+    {
+        $this->view('perca_1');
+    }
+
+    public function contato_submit()
+    {
+        if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+            header("Location: " . BASE_URL);
+            exit;
+        }
+
+        $email = trim($_POST['email']);
+
+        $sent = Mailer::sendMail(
+            $email,
+            "Contato recebido!",
+            "<h1>Obrigado por entrar em contato!</h1><p>Recebemos seu email.</p>"
+        );
+
+        if ($sent) {
+            echo "Email enviado com sucesso!";
+        } else {
+            echo "Erro ao enviar email.";
+        }
+    }
 }

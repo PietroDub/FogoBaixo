@@ -11,11 +11,12 @@ class Users extends BaseModel
     public $nome;
     public $senha;
     public $email;
+    public $foto;
     public $criado_em;
     public $alterado_em;
     public $deletado_em;
 
-    public function __construct($nome = null, $senha = null, $email = null, $id_usuario = null, $criado_em = null, $alterado_em = null, $deletado_em = null)
+    public function __construct($nome = null, $senha = null, $email = null, $foto = null, $id_usuario = null, $criado_em = null, $alterado_em = null, $deletado_em = null)
     {
         $this->id_usuario = $id_usuario;
         $this->nome       = $nome;
@@ -79,7 +80,7 @@ class Users extends BaseModel
                 session_start();
             }
 
-            $_SESSION['usuario'] = [
+            $_SESSION['user'] = [
                 'id'     => $lastId,
                 'nome'   => $this->nome,
                 'email'  => $this->email,
@@ -141,7 +142,7 @@ class Users extends BaseModel
     public function getById($id)
     {
         $this->db_connect();
-        $params = ['id' => $id];
+        $params = [':id' => $id];
 
         $resultado = $this->query(
             "SELECT id_usuario, nome, email, foto FROM usuarios WHERE id_usuario = :id",

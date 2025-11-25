@@ -74,12 +74,12 @@
     </div>
     <div class="h-2 bg-black w-10/12 flex bg-green-600"></div>
     <nav class="text-white flex gap-x-10 my-5 IBM">
-        <a href="../app/views/vegans.php" class="border-l-3 border-green-600 pl-2 text-2xl sr-only md:not-sr-only">Veganas</a>
-        <a href="../app/views/Massas.php" class="border-l-3 border-green-600 pl-2 text-2xl">Massas</a>
-        <a href="../app/views/Doces.php" class="border-l-3 border-green-600 pl-2 text-2xl">Doces</a>
+        <a href="../app/views/vegans.php" class="border-l-3 border-green-600 pl-2 text-2xl">Veganas</a>
+        <a href="../app/views/Massas.php" class="border-l-3 border-green-600 pl-2 text-2xl sr-only md:not-sr-only">Massas</a>
+        <a href="../app/views/Doces.php" class="border-l-3 border-green-600 pl-2 text-2xl sr-only md:not-sr-only">Doces</a>
         <a href="../app/views/Fitness.php" class="border-l-3 border-green-600 pl-2 text-2xl">Fitness</a>
-        <a href="../app/views/região.php" class="border-l-3 border-green-600 pl-2 text-2xl">Regionais</a>
-        <a href="../app/views/Recomendados.php" class="border-l-3 border-green-600 pl-2 text-2xl sr-only md:not-sr-only">Outros..</a>
+        <a href="../app/views/região.php" class="border-l-3 border-green-600 pl-2 text-2xl sr-only md:not-sr-only">Regionais</a>
+        <a href="../app/views/Recomendados.php" class="border-l-3 border-green-600 pl-2 text-2xl">Outros..</a>
     </nav>
     <div class="gap-0 flex flex-col justify-center items-center">
          <h1 class="text-white just-me sub">Bateu a</h1>
@@ -379,20 +379,20 @@
                         Conheça a equipe criadora e os principais contribuidores que tornam este site possível.
                 Aqui, você vai descobrir as pessoas por trás das receitas, ideias e inovações que tornam o Fogo Baixo um espaço especial para quem ama cozinhar e compartilhar momentos em volta da comida.
                     </p>
-                <div class="grid grid-cols-2 grid-rows-2 gap-0">
+                <div class="hidden lg:grid grid-cols-2 grid-rows-2 gap-0">
                     <img src="assets/imgs/home_img/grid_1.svg" class="col-start-1 row-start-1" alt="">
                     <img src="assets/imgs/home_img/grid_2.svg" class="col-start-1 ml-75 row-start-1" alt="">
                     <img src="assets/imgs/home_img/grid_3.svg" class="col-span-2 row-start-2" alt="">
                 </div>
             </div>
-            <div class="flex flex-col items-center justify-center md:hidden">
+            <!-- <div class="flex flex-col items-center justify-center md:hidden">
                 <p class="text-green-600 font-semibold text-3xl border-l-10 pl-5 border-green-600 Caveat">Conheça a equipe que fez isso aconteçer!</p>
                 <div class="grid grid-cols-2 grid-rows-2 gap-0 ml-10 mt-10">
                     <img src="assets/imgs/home_img/grid_1.svg" class="col-start-1 row-start-1" alt="">
                     <img src="assets/imgs/home_img/grid_2.svg" class="col-start-1 ml-75 row-start-1" alt="">
                     <img src="assets/imgs/home_img/grid_3.svg" class="col-span-2 row-start-2" alt="">
                 </div>
-            </div>
+            </div> -->
         </div>
 
 </main>

@@ -9,4 +9,5 @@ return array(
     'bng\\System\\' => array($baseDir . '/app/system'),
     'bng\\Models\\' => array($baseDir . '/app/models'),
     'bng\\Controllers\\' => array($baseDir . '/app/controllers'),
+    'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
 );

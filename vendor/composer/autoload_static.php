@@ -18,6 +18,10 @@ class ComposerStaticInit080e2ccbecac0b0a0d365cb20495c659
             'bng\\Models\\' => 11,
             'bng\\Controllers\\' => 16,
         ),
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -32,6 +36,10 @@ class ComposerStaticInit080e2ccbecac0b0a0d365cb20495c659
         'bng\\Controllers\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app/controllers',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
     );
 

@@ -1,3 +1,8 @@
+<?php
+$foto = $foto ?? ($_SESSION['user']['foto'] ?? null);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,10 +39,10 @@
   <div class="hidden md:flex w-full h-full items-center justify-center relative">
     <img src="<?= BASE_URL ?>/assets/imgs/fundo_marrom.svg" class="w-2/6 absolute top-0 left-0" alt=""> <!-- Imagem marrom de fundo -->
 
-    <main class="z-10 w-3/6 bg-[url('<?= BASE_URL ?>/assets/imgs/perfil/fundo_p.svg')] h-full bg-no-repeat bg-cover bg-center relative">
+    <main class="z-10 w-5/6 lg:w-3/6 bg-[url('<?= BASE_URL ?>/assets/imgs/perfil/fundo_p.svg')] h-full bg-no-repeat bg-cover bg-center relative">
       <div class="flex items-center justify-center mt-10 gap-x-10">
         
-        <?php  if(!isset( $_SESSION['user']['foto'])): ?>
+        <?php  if(empty($foto)): ?>
         <form action="?ct=PerfilController&mt=Image_submit" method="post" enctype="multipart/form-data">
           <input type="file" name="imagem" accept="image/*" class="form-control" />
           <button type="submit" class="btn Caveat border-l-8 border-green-500 green-dark pl-2">
@@ -72,9 +77,9 @@
       </div>
       <section class="h-1/5">
         <div class="h-full flex items-center justify-center p-5 gap-x-5 mt-5">
-          <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 31.png" class="w-1/5" alt="">
-          <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 32.png" class="w-1/5" alt="">
-          <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 33.png" class="w-1/5" alt="">
+          <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 31.png" class=":w-1/5" alt="">
+          <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 32.png" class=":w-1/5" alt="">
+          <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 33.png" class=":w-1/5" alt="">
         </div>
       </section>
     </main>

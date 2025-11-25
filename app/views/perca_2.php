@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Perca de senha - FogoBaixo</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="<?= BASE_URL ?>/assets/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="min-h-screen flex items-center justify-center m-0 p-0 relative overflow-hidden">
 
   <!-- Imagem de fundo (acima do body, abaixo do conteúdo) -->
   <div class="absolute inset-0 z-0 pointer-events-none">
-    <img src="../imgs/triangulo.png" class="absolute bottom-0 right-0 w-1/2" alt="">
+    <img src="<?= BASE_URL ?>/assets/imgs/triangulo.png" class="absolute bottom-0 right-0 w-1/2" alt="">
   </div>
 
   <!-- Conteúdo principal -->
@@ -21,7 +21,7 @@
     <!-- Lado Esquerdo -->
     <div class="w-1/2 p-8 flex flex-col justify-center gap-y-5 background items-center">
       <div class="flex items-center flex-col">
-        <img src="../imgs/home_img/7 1.svg" class="w-3/4" alt="">
+        <img src="<?= BASE_URL ?>/assets/imgs/home_img/7 1.svg" class="w-3/4" alt="">
         <p class="text-xl text-white font-semibold text-center">
           Entre no site, e explore as mais diversas e personalizadas experiências culinárias.
         </p>
