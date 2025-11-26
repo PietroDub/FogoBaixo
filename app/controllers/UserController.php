@@ -82,6 +82,8 @@ class UserController extends BaseController
             }
 
             if ($saveResult['status'] === 'success') {
+                if (isset($_SESSION['usuario'])) unset($_SESSION['usuario']);
+                if (isset($_SESSION['user'])) unset($_SESSION['user']);
                 header('Location: ' . BASE_URL . '/index.php?ct=UserController&mt=login_form');
                 return;
             }
