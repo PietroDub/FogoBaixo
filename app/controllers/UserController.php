@@ -31,9 +31,6 @@ class UserController extends BaseController
 
     public function cadastro_submit()
     {
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
         if ($_SERVER['REQUEST_METHOD'] != 'POST') {
             die('Acesso negado!');
         }
@@ -68,7 +65,7 @@ class UserController extends BaseController
         $senha = trim($_POST['senha']);
         $email = trim($_POST['email']);
 
-        // 🔒 Nunca salve a senha sem hash!
+        // Nunca salve a senha sem hash!
         $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
 
         $user = new Users($nome, $senha_hash, $email);
@@ -77,7 +74,7 @@ class UserController extends BaseController
         if (is_array($saveResult)) {
             if ($saveResult['status'] === 'exists') {
                 $_SESSION['validation_errors'] = ['Já existe usuário com esse email'];
-                $this->cadastro_form();
+                $this->login_form();
                 return;
             }
 
@@ -96,6 +93,8 @@ class UserController extends BaseController
             $this->cadastro_form();
             return;
         }
+
+        $this->login_form();
     }
 
     public function login_form()

@@ -12,14 +12,9 @@ class PerfilController extends BaseController
         header("Location: " . BASE_URL . "?ct=UserController&mt=login_form");
         exit;
     }
-
         //cria usuário para pegar as informações
         $user = new Users();
         $dados = $user->getById($_SESSION['user']['id_usuario']);
-
-        if (empty($dados->foto)) {
-            $dados->foto = "Perfil_Template.svg"; //imagem padrão
-        }
         
         $_SESSION['user']['foto'] = $dados->foto;
         $this->view('perfil', ['user' => $dados]);
@@ -36,8 +31,9 @@ class PerfilController extends BaseController
         }
 
         if (!empty($_FILES['imagem']['name'])){
+            //gera caminho aleatório
             $nomeArquivo = uniqid() . "_" . $_FILES['imagem']['name'];
-            $caminho = "uploads/" . $nomeArquivo;
+            $caminho =  __DIR__ . '/../../public/assets/uploads/' . $nomeArquivo;
 
             move_uploaded_file($_FILES['imagem']['tmp_name'], $caminho);
 

@@ -42,7 +42,7 @@ $foto = $foto ?? ($_SESSION['user']['foto'] ?? null);
     <main class="z-10 w-5/6 lg:w-3/6 bg-[url('<?= BASE_URL ?>/assets/imgs/perfil/fundo_p.svg')] h-full bg-no-repeat bg-cover bg-center relative">
       <div class="flex items-center justify-center mt-10 gap-x-10">
         
-        <?php  if(empty($foto)): ?>
+        <?php  if(empty($_SESSION['user']['foto'])): ?>
         <form action="?ct=PerfilController&mt=Image_submit" method="post" enctype="multipart/form-data">
           <input type="file" name="imagem" accept="image/*" class="form-control" />
           <button type="submit" class="btn Caveat border-l-8 border-green-500 green-dark pl-2">
@@ -50,7 +50,7 @@ $foto = $foto ?? ($_SESSION['user']['foto'] ?? null);
           </button>
         </form>
         <?php else: ?>
-          <img class="w-1/3 xl:w-1/5" src="<?= BASE_URL ?>/uploads/<?= $_SESSION['user']['foto'] ?>" alt="">
+          <img class="w-1/3 xl:w-1/5" src="<?= BASE_URL ?>/ assets/uploads/<?= $_SESSION['user']['foto'] ?>" alt="">
         <?php endif; ?>
 
         <div class="background p-5 text-white gap-x-10 text-md lg:text-xl">

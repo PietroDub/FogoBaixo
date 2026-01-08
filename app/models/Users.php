@@ -76,17 +76,6 @@ class Users extends BaseModel
             // assume que o objeto traz last_id
             $lastId = $insert->last_id ?? $insert['last_id'] ?? null;
 
-            if (session_status() === PHP_SESSION_NONE) {
-                session_start();
-            }
-
-            $_SESSION['user'] = [
-                'id'     => $lastId,
-                'nome'   => $this->nome,
-                'email'  => $this->email,
-                'logado' => true
-            ];
-
             return ['status' => 'success', 'id' => $lastId];
         }
 
@@ -106,7 +95,7 @@ class Users extends BaseModel
         //ver se esta na base de dados
         $this->db_connect();
         $resultados = $this->query(
-            "SELECT id_usuario, nome, email, senha FROM usuarios WHERE email = :email",
+            "SELECT id_usuario, nome, email, senha, foto FROM usuarios WHERE email = :email",
             $params
         );
 
