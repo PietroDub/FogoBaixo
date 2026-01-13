@@ -19,3 +19,4 @@ function printData($data, $die = true)
         die('<br>FIM</br>');
     }
 }
+

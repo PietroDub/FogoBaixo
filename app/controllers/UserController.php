@@ -176,6 +176,7 @@ class UserController extends BaseController
         exit;
     }
 
+    // a fazer
     public function esqueceu_senha()
     {
         $this->view('perca_1');
