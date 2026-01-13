@@ -22,6 +22,7 @@ class Users extends BaseModel
         $this->nome       = $nome;
         $this->senha      = $senha;
         $this->email      = $email;
+        $this->foto       = $foto;
         $this->criado_em  = $criado_em;
         $this->alterado_em = $alterado_em;
         $this->deletado_em = $deletado_em;
@@ -123,7 +124,7 @@ class Users extends BaseModel
                 'id_usuario' => $userRow->id_usuario,
                 'nome'       => $userRow->nome,
                 'email'      => $userRow->email,
-                'foto'       => $userRow->foto ?? null
+                'foto'       => $userRow->foto ?? 0
             ]
         ];
     }

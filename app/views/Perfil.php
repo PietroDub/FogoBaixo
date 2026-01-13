@@ -5,6 +5,7 @@ $foto = $foto ?? ($_SESSION['user']['foto'] ?? null);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,15 +26,18 @@ $foto = $foto ?? ($_SESSION['user']['foto'] ?? null);
     .Caveat {
       font-family: 'Caveat Brush', cursive;
     }
+
     .IBM {
       font-family: "IBM Plex Sans Thai", sans-serif;
     }
+
     .Gudea {
       font-family: "Gudea", sans-serif;
       font-style: normal;
     }
   </style>
 </head>
+
 <body class="w-screen h-screen">
 
   <div class="hidden md:flex w-full h-full items-center justify-center relative">
@@ -90,79 +94,80 @@ $foto = $foto ?? ($_SESSION['user']['foto'] ?? null);
   <div class="flex flex-col items-center justify-center md:hidden w-full h-full bg-gray-100">
     <img src="<?= BASE_URL ?>/assets/imgs/perfil/Perfil.svg" class="w-1/3 h-1/4" alt="">
     <div>
-         <p class="font-semibold brown text-xl">@NomeDeUsuario</p>
-          <p class="font-semibold brown text-xl">emaildousuario@gmail.com</p>
+      <p class="font-semibold brown text-xl">@NomeDeUsuario</p>
+      <p class="font-semibold brown text-xl">emaildousuario@gmail.com</p>
     </div>
     <div class="mt-10">
-        <h1 class="Caveat border-l-8 border-green-500 green-dark text-5xl pl-4">Receitas Salvas e postadas</h1>
-      </div>
+      <h1 class="Caveat border-l-8 border-green-500 green-dark text-5xl pl-4">Receitas Salvas e postadas</h1>
+    </div>
 
-<div id="animation-carousel" class="relative w-full" data-carousel="static">
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg h-96 mt-10">
-         <!-- Item 1 -->
+    <div id="animation-carousel" class="relative w-full" data-carousel="static">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden rounded-lg h-96 mt-10">
+        <!-- Item 1 -->
         <div class="hidden duration-200 ease-linear " data-carousel-item>
-            <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 31.png" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 31.png" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-200 ease-linear" data-carousel-item>
-            <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 32.png" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 32.png" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-200 ease-linear" data-carousel-item="active">
-            <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 33.png" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <img src="<?= BASE_URL ?>/assets/imgs/perfil/Group 33.png" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
+      </div>
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
     </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
-</div>
 
   </div>
 
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const items = document.querySelectorAll('[data-carousel-item]');
-    const prevButton = document.querySelector('[data-carousel-prev]');
-    const nextButton = document.querySelector('[data-carousel-next]');
+    document.addEventListener("DOMContentLoaded", function() {
+      const items = document.querySelectorAll('[data-carousel-item]');
+      const prevButton = document.querySelector('[data-carousel-prev]');
+      const nextButton = document.querySelector('[data-carousel-next]');
 
-    let current = 0;
+      let current = 0;
 
-    function showItem(index) {
-      items.forEach((item, i) => {
-        item.classList.toggle('hidden', i !== index);
-        item.setAttribute('data-carousel-item', i === index ? 'active' : '');
+      function showItem(index) {
+        items.forEach((item, i) => {
+          item.classList.toggle('hidden', i !== index);
+          item.setAttribute('data-carousel-item', i === index ? 'active' : '');
+        });
+      }
+
+      prevButton.addEventListener('click', () => {
+        current = (current - 1 + items.length) % items.length;
+        showItem(current);
       });
-    }
 
-    prevButton.addEventListener('click', () => {
-      current = (current - 1 + items.length) % items.length;
+      nextButton.addEventListener('click', () => {
+        current = (current + 1) % items.length;
+        showItem(current);
+      });
+
+      // Mostrar o primeiro item ao carregar
       showItem(current);
     });
-
-    nextButton.addEventListener('click', () => {
-      current = (current + 1) % items.length;
-      showItem(current);
-    });
-
-    // Mostrar o primeiro item ao carregar
-    showItem(current);
-  });
-</script>
+  </script>
 
 </body>
+
 </html>
