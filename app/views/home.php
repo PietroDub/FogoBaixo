@@ -69,7 +69,7 @@
             <?php endif; ?>
         </nav>
         <?php if (!empty($_SESSION['user'])): ?>
-            <a href="?ct=PerfilController&mt=perfil"><img src="assets/imgs/home_img/Perfil_Template.svg" alt="" class="w-20"></a> 
+            <a href="?ct=PerfilController&mt=perfil"><img src="<?= BASE_URL ?>/assets/uploads/<?= $_SESSION['user']['foto'] ?>" alt="" class="w-20 rounded-full"></a> 
         <?php endif; ?>
     </div>
     <div class="h-2 bg-black w-10/12 flex bg-green-600"></div>

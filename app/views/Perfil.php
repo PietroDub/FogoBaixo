@@ -54,7 +54,7 @@ $foto = $foto ?? ($_SESSION['user']['foto'] ?? null);
           </button>
         </form>
         <?php else: ?>
-          <img class="w-1/3 xl:w-1/5" src="<?= BASE_URL ?>/ assets/uploads/<?= $_SESSION['user']['foto'] ?>" alt="">
+          <img class="w-1/3 xl:w-1/5 rounded-full" src="<?= BASE_URL ?>/assets/uploads/<?= $_SESSION['user']['foto'] ?>" alt="">
         <?php endif; ?>
 
         <div class="background p-5 text-white gap-x-10 text-md lg:text-xl">
