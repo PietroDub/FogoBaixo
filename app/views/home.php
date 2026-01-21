@@ -95,6 +95,7 @@
             <h1 class="text-green-600 text-5xl w-8/10 md:w-3/12 border-l-10 ml-5 md:ml-20 mt-10 pl-2">
       RECEITAS EM ALTA!
         </h1>
+        <a href="?ct=ReceitasController&mt=receita_form"> Adicionar Receitas </a>
         <h1 class="brown text-3xl w-8/10 md:w-4/12 border-l-10 ml-5 md:ml-20 mt-10 pl-2">
       Pensamos o melhor para suas preferências e gostos.
         </h1>
