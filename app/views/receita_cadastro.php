@@ -75,7 +75,7 @@
     </div>
    </header>
 
-    <form action="" method="post" enctype="multipart/form-data" class="w-10/12 flex flex-col justify-center items-center">
+    <form action="" method="post" enctype="multipart/form-data" class="w-10/12 flex flex-col justify-center items-center gap-y-25">
         <section class="flex h-150 p-5 items-start justify-center">
             
            <!-- INPUT FILE ESCONDIDO -->
@@ -118,18 +118,18 @@
                     <p class="word-break: break-all;"><?= $_SESSION['user']['email'] ?></p>
                 </div>
             </div>
-            <h1 class="text-5xl border-l-15 pl-2 Caveat green-dark">
+            <h1 class="text-5xl  border-l-15 pl-2 Caveat green-dark">
             Sobre o chef: 
             </h1>
-            <textarea class="word-break: break-all; font-semibold w-full" type="text" name="descricao" id="descricao"
+            <textarea class="rounded border word-break: break-all; font-semibold h-full w-full" type="text" name="descricao" id="descricao"
             maxlength="" placeholder="Descrição curta do criador(a)!"> </textarea>
-           <div>
-             <div class="hidden gap-y-5 m-10 lg:flex lg:flex-col">
-                <div class="font-semibold text-white background p-5 text-2xl">
+           <div class="hidden lg:flex gap-x-5">
+             <div class= "gap-y-5 lg:flex xl:flex-col">
+                <div class="font-semibold text-white background p-3 text-2xl">
                 salvar receita!
                 <i class="fa-solid fa-bookmark"></i>
             </div>
-            <div class="font-semibold text-white background p-5 text-2xl">
+            <div class="font-semibold text-white background p-3 text-2xl">
                 Compartilhar!
                 <i class="fa-solid fa-arrow-up-from-bracket"></i>
             </div>
@@ -137,7 +137,60 @@
            </div>
         </section>
 
-         
+         <section class="w-8/10 flex gap-x-5 justify-center">
+           <div class="w-1/2">
+            <h1 class="text-5xl border-l-15 pl-2 Caveat w-full green-dark">
+                Sobre a receita:
+            </h1> 
+            <textarea class="mt-5 rounded border h-3/4 w-full" placeholder="Descrição da sua receita!" type="text" name="descricao_receita" id="descricao_receita"></textarea>
+           </div>
+           <div class="w-1/2">
+            <h1 class="text-5xl border-l-15 pl-2 Caveat w-full brown hidden md:flex">
+                INGREDIENTES
+            </h1> 
+            <h1 class="text-2xl border-l-15 pl-2 Caveat w-full brown flex md:hidden">
+                INGREDIENTES
+            </h1> 
+            <ul id="listaIngredientes" class="flex flex-col gap-y-2 mt-5">
+                <li>
+                    <input 
+                    type="text" 
+                    name="ingredientes[]" 
+                    placeholder="Ingrediente"
+                    class="w-full p-2 rounded border"
+                    >
+                </li>
+            </ul>
+
+            <button 
+            type="button"
+            id="addIngrediente"
+            class="mt-3 background text-white px-4 py-2 rounded"                >
+                + Adicionar ingrediente
+            </button>
+           </div>
+        </section>
+
+        <section class="w-8/10 flex flex-col md:flex md:flex-row gap-x-5 mt-10 justify-center">
+            <div>
+                <h1 class="text-5xl border-l-15 pl-2 Caveat w-full green-dark">
+                    Passo a Passo:
+                </h1> 
+               <div class="flex p-5 items-center justify-center gap-x-3 text-2xl background text-white mt-10">
+                   <p class="font-semibold">30 MIN</p>
+                   <i class="fa-solid fa-clock"></i>
+               </div>
+            </div>
+
+            <div class="flex flex-col items-start">
+                <h1 class="text-5xl  pl-5 Caveat brown">Mantenha o Fogo Baixo!</h1>
+            <div class="flex items-center justify-center mt-10">
+              <h2 class="Caveat p-5 green-light text-5xl text-white w-1/6 text-center mt-10">1</h2>  
+              <h1 class="text-5xl  pl-5 Caveat green-dark mt-10">PASSO 1: Colocar na panela!</h1>
+            </div>
+            <p class="flex items-center justify-center w-2/3">Derreta a manteiga em uma frigideira em fogo médio. Adicione a cebola picada e refogue até que fique transparente, mexendo sempre para não queimar.</p>
+            </div>
+        </section>
     </form>
 
  <footer class="bottom-0 left-0 w-full text-white p-4 text-centerd  green-light flex items-center justify-center mt-30">
@@ -154,6 +207,27 @@
 
     document.getElementById('previewImagem').src =
         URL.createObjectURL(file);
+    });
+    
+    document.getElementById('addIngrediente').addEventListener('click', () => {
+    const ul = document.getElementById('listaIngredientes');
+
+    if (ul.children.length >= 6) {
+    alert('Você pode adicionar no máximo 6 ingredientes.');
+    return;
+    }
+
+    const li = document.createElement('li');
+    li.innerHTML = `
+        <input 
+        type="text" 
+        name="ingredientes[]" 
+        placeholder="Ingrediente"
+        class="w-full p-2 rounded border"
+        >
+    `;
+
+    ul.appendChild(li);
     });
 </script>
 </body>
